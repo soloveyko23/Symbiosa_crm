@@ -132,13 +132,38 @@
 		</header>
 		<main class="page">
 			<div class="page__container">
+				<div class="complete-profile-alert profile-alert">
+					<div class="profile-alert__body">
+						<div class="profile-alert__left">
+							<h6 class="md:heading-lg heading-md flex items-center gap-2 mb-2">
+								<div class="svg-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-m" width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path opacity="0.5" d="M16.157 3.802L16.843 4.208C18.872 5.41 19.886 6.011 20.443 7C21 7.99 21 9.19 21 11.594V12.406C21 14.809 21 16.011 20.443 17C19.886 17.99 18.872 18.59 16.843 19.791L16.157 20.198C14.128 21.399 13.114 22 12 22C10.886 22 9.872 21.4 7.843 20.198L7.157 19.791C5.128 18.591 4.114 17.989 3.557 17C3 16.01 3 14.81 3 12.406V11.594C3 9.19 3 7.989 3.557 7C4.114 6.01 5.128 5.41 7.157 4.208L7.843 3.802C9.872 2.601 10.886 2 12 2C13.114 2 14.128 2.6 16.157 3.802Z" fill="#7D72CB" />
+										<path d="M12 6.25C12.1989 6.25 12.3897 6.32902 12.5303 6.46967C12.671 6.61032 12.75 6.80109 12.75 7V13C12.75 13.1989 12.671 13.3897 12.5303 13.5303C12.3897 13.671 12.1989 13.75 12 13.75C11.8011 13.75 11.6103 13.671 11.4697 13.5303C11.329 13.3897 11.25 13.1989 11.25 13V7C11.25 6.80109 11.329 6.61032 11.4697 6.46967C11.6103 6.32902 11.8011 6.25 12 6.25ZM12 17C12.2652 17 12.5196 16.8946 12.7071 16.7071C12.8946 16.5196 13 16.2652 13 16C13 15.7348 12.8946 15.4804 12.7071 15.2929C12.5196 15.1054 12.2652 15 12 15C11.7348 15 11.4804 15.1054 11.2929 15.2929C11.1054 15.4804 11 15.7348 11 16C11 16.2652 11.1054 16.5196 11.2929 16.7071C11.4804 16.8946 11.7348 17 12 17Z" fill="#7D72CB" />
+									</svg>
+								</div>
+								Complete your profie
+							</h6>
+							<p class="sm:text-body-lg-regular text-body-md-regular text-secondary">
+								To apply for campaigns you need to complete your profile
+							</p>
+						</div>
+						<div class="profile-alert__right">
+							<a href="#" class="button button-large button-primary" data-ripple="">
+								<span class="button__text">
+									Go to my profile
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
 				<div class="widgets">
 					<div class="widget creator__info !p-0">
 						<div class="widget__header creator__info-header header-creator p-6">
 							<div class="profile profile-level-3 profile-size--m header-creator__profile">
 								<div class="profile__body">
 									<div class="profile__icon">
-										<img src="img/profile-avatars/image.png" alt="image">
+										<img src="img/profile-avatars/default.png" alt="image">
 									</div>
 									<div class="profile__info">
 										<div class="profile__name">
@@ -163,13 +188,14 @@
 									<div class="progress-step actived">
 										<div class="circle">1</div>
 									</div>
-									<div class="progress-step actived">
-										<div class="circle">2</div>
+									<div class="progress-step">
+										<div class="circle">
+											<img src="img/icons/solar_lock-keyhole-minimalistic-bold-duotone.svg" alt="1">
+										</div>
 									</div>
-									<div class="progress-step active">
-										<div class="circle">3</div>
-										<div class="progress-step__bar" style="width: 20px;">
-
+									<div class="progress-step">
+										<div class="circle">
+											<img src="img/icons/solar_lock-keyhole-minimalistic-bold-duotone.svg" alt="1">
 										</div>
 									</div>
 									<div class="progress-step">
@@ -237,7 +263,7 @@
 													</p>
 												</div>
 												<div class="info-block__score">
-													4,8
+													-
 												</div>
 											</div>
 											<div class="info-block__line text-color-green">
@@ -253,7 +279,7 @@
 													</p>
 												</div>
 												<div class="info-block__score">
-													99%
+													-
 												</div>
 											</div>
 											<div class="info-block__line text-color-purple">
@@ -269,7 +295,7 @@
 													</p>
 												</div>
 												<div class="info-block__score">
-													87
+													-
 												</div>
 											</div>
 										</div>
@@ -295,7 +321,7 @@
 													</p>
 												</div>
 												<div class="info-block__score">
-													14
+													-
 												</div>
 											</div>
 											<div class="info-block__line text-color-green">
@@ -311,7 +337,7 @@
 													</p>
 												</div>
 												<div class="info-block__score">
-													3
+													-
 												</div>
 											</div>
 											<div class="info-block__line text-color-purple">
@@ -327,7 +353,7 @@
 													</p>
 												</div>
 												<div class="info-block__score">
-													1
+													-
 												</div>
 											</div>
 										</div>
@@ -342,7 +368,8 @@
 										</h5>
 									</div>
 									<div class="info-block__body">
-										<div class="info-block-socials__counter counter">
+
+										<button class="info-block-socials__counter counter counter-connect" data-ripple>
 											<div class="counter__body">
 												<div class="counter__icon">
 													<div class="svg-icon">
@@ -354,13 +381,20 @@
 													</div>
 												</div>
 												<div class="counter__info">
-													<p class="heading-lg text-color-green text-center">
-														128K
-													</p>
+													<div class="text-button-sm text-white text-center">
+														<div class="svg-icon">
+															<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="none">
+																<path d="M9.49998 5.66665H6.16665V8.99998C6.16665 9.36665 5.86665 9.66665 5.49998 9.66665C5.13331 9.66665 4.83331 9.36665 4.83331 8.99998V5.66665H1.49998C1.13331 5.66665 0.833313 5.36665 0.833313 4.99998C0.833313 4.63331 1.13331 4.33331 1.49998 4.33331H4.83331V0.99998C4.83331 0.633313 5.13331 0.333313 5.49998 0.333313C5.86665 0.333313 6.16665 0.633313 6.16665 0.99998V4.33331H9.49998C9.86665 4.33331 10.1666 4.63331 10.1666 4.99998C10.1666 5.36665 9.86665 5.66665 9.49998 5.66665Z" fill="white" />
+															</svg>
+														</div>
+														<p>
+															Connect
+														</p>
+													</div>
 												</div>
 											</div>
-										</div>
-										<div class="info-block-socials__counter counter">
+										</button>
+										<button class="info-block-socials__counter counter counter-connect" data-ripple>
 											<div class="counter__body">
 												<div class="counter__icon">
 													<div class="svg-icon">
@@ -372,12 +406,19 @@
 													</div>
 												</div>
 												<div class="counter__info">
-													<p class="heading-lg text-color-green text-center">
-														128K
-													</p>
+													<div class="text-button-sm text-white text-center">
+														<div class="svg-icon">
+															<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="none">
+																<path d="M9.49998 5.66665H6.16665V8.99998C6.16665 9.36665 5.86665 9.66665 5.49998 9.66665C5.13331 9.66665 4.83331 9.36665 4.83331 8.99998V5.66665H1.49998C1.13331 5.66665 0.833313 5.36665 0.833313 4.99998C0.833313 4.63331 1.13331 4.33331 1.49998 4.33331H4.83331V0.99998C4.83331 0.633313 5.13331 0.333313 5.49998 0.333313C5.86665 0.333313 6.16665 0.633313 6.16665 0.99998V4.33331H9.49998C9.86665 4.33331 10.1666 4.63331 10.1666 4.99998C10.1666 5.36665 9.86665 5.66665 9.49998 5.66665Z" fill="white" />
+															</svg>
+														</div>
+														<p>
+															Connect
+														</p>
+													</div>
 												</div>
 											</div>
-										</div>
+										</button>
 										<button class="info-block-socials__counter counter counter-connect" data-ripple>
 											<div class="counter__body">
 												<div class="counter__icon">
@@ -442,274 +483,12 @@
 									<h5 class="md:heading-lg heading-md">
 										Projects
 									</h5>
-									<a href="#" class="link link--small link--green">See all</a>
 								</div>
 								<div class="widget__body creator__projects-body">
-									<div class="creator__projects-list">
-										<a href="#" class="campaign-item campaign-item--active" data-ripple>
-											<div class="campaign-item__body">
-												<div class="campaign-item__left">
-													<div class="profile profile-size--s">
-														<div class="profile__body">
-															<div class="profile__icon">
-																<img src="img/profile-avatars/logo.png" alt="image">
-															</div>
-															<div class="profile__info">
-																<div class="profile__name">
-																	Campaign Name
-																</div>
-															</div>
-														</div>
-
-													</div>
-												</div>
-												<div class="campaign-item__right">
-													<div class="tags tags--project">
-														<div class="tag tag--active">
-															<div class="svg-icon">
-																<svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
-																	<path opacity="0.3" d="M6.5 11C9.2615 11 11.5 8.7615 11.5 6C11.5 3.2385 9.2615 1 6.5 1C3.7385 1 1.5 3.2385 1.5 6C1.5 8.7615 3.7385 11 6.5 11Z" fill="#101010" />
-																	<path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 3.625C6.59946 3.625 6.69484 3.66451 6.76516 3.73483C6.83549 3.80516 6.875 3.90054 6.875 4V5.845L8.015 6.985C8.05184 7.01933 8.08139 7.06073 8.10189 7.10673C8.12239 7.15273 8.13341 7.20239 8.1343 7.25274C8.13518 7.30309 8.12592 7.3531 8.10706 7.3998C8.0882 7.44649 8.06013 7.48891 8.02452 7.52452C7.98891 7.56013 7.94649 7.5882 7.8998 7.60706C7.8531 7.62592 7.80309 7.63518 7.75274 7.6343C7.70239 7.63341 7.65273 7.62239 7.60673 7.60189C7.56073 7.58139 7.51933 7.55184 7.485 7.515L6.235 6.265C6.16465 6.19474 6.12509 6.09942 6.125 6V4C6.125 3.90054 6.16451 3.80516 6.23484 3.73483C6.30516 3.66451 6.40054 3.625 6.5 3.625Z" fill="#101010" />
-																</svg>
-															</div>
-															Active
-														</div>
-													</div>
-													<div class="campaign-item__sum">
-														<p class="heading-sm">
-															$3,205
-														</p>
-													</div>
-													<div class="campaign-item__platform">
-														<div class="svg-icon">
-															<svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-sm" width="20" height="20" viewBox="0 0 20 20" fill="none">
-																<path d="M10 3.33337C1.80953 3.33337 1.66667 4.08489 1.66667 10C1.66667 15.9152 1.80953 16.6667 10 16.6667C18.1905 16.6667 18.3333 15.9152 18.3333 10C18.3333 4.08489 18.1905 3.33337 10 3.33337ZM12.6667 10.2909L8.92858 12.1091C8.59524 12.2667 8.33334 12.0849 8.33334 11.7091V8.29095C8.33334 7.91519 8.60715 7.73337 8.92858 7.89095L12.6667 9.70913C13 9.86671 13 10.1334 12.6667 10.2909Z" fill="white" />
-															</svg>
-														</div>
-													</div>
-												</div>
-											</div>
-										</a>
-										<a href="#" class="campaign-item campaign-item--active" data-ripple>
-											<div class="campaign-item__body">
-												<div class="campaign-item__left">
-													<div class="profile profile-size--s">
-														<div class="profile__body">
-															<div class="profile__icon">
-																<img src="img/profile-avatars/logo.png" alt="image">
-															</div>
-															<div class="profile__info">
-																<div class="profile__name">
-																	Campaign Name
-																</div>
-															</div>
-														</div>
-
-													</div>
-												</div>
-												<div class="campaign-item__right">
-													<div class="tags tags--project">
-														<div class="tag tag--active">
-															<div class="svg-icon">
-																<svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
-																	<path opacity="0.3" d="M6.5 11C9.2615 11 11.5 8.7615 11.5 6C11.5 3.2385 9.2615 1 6.5 1C3.7385 1 1.5 3.2385 1.5 6C1.5 8.7615 3.7385 11 6.5 11Z" fill="#101010" />
-																	<path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 3.625C6.59946 3.625 6.69484 3.66451 6.76516 3.73483C6.83549 3.80516 6.875 3.90054 6.875 4V5.845L8.015 6.985C8.05184 7.01933 8.08139 7.06073 8.10189 7.10673C8.12239 7.15273 8.13341 7.20239 8.1343 7.25274C8.13518 7.30309 8.12592 7.3531 8.10706 7.3998C8.0882 7.44649 8.06013 7.48891 8.02452 7.52452C7.98891 7.56013 7.94649 7.5882 7.8998 7.60706C7.8531 7.62592 7.80309 7.63518 7.75274 7.6343C7.70239 7.63341 7.65273 7.62239 7.60673 7.60189C7.56073 7.58139 7.51933 7.55184 7.485 7.515L6.235 6.265C6.16465 6.19474 6.12509 6.09942 6.125 6V4C6.125 3.90054 6.16451 3.80516 6.23484 3.73483C6.30516 3.66451 6.40054 3.625 6.5 3.625Z" fill="#101010" />
-																</svg>
-															</div>
-															Active
-														</div>
-													</div>
-													<div class="campaign-item__sum">
-														<p class="heading-sm">
-															$3,205
-														</p>
-													</div>
-													<div class="campaign-item__platform">
-														<div class="svg-icon">
-															<svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-sm" width="20" height="20" viewBox="0 0 20 20" fill="none">
-																<path d="M10 3.33337C1.80953 3.33337 1.66667 4.08489 1.66667 10C1.66667 15.9152 1.80953 16.6667 10 16.6667C18.1905 16.6667 18.3333 15.9152 18.3333 10C18.3333 4.08489 18.1905 3.33337 10 3.33337ZM12.6667 10.2909L8.92858 12.1091C8.59524 12.2667 8.33334 12.0849 8.33334 11.7091V8.29095C8.33334 7.91519 8.60715 7.73337 8.92858 7.89095L12.6667 9.70913C13 9.86671 13 10.1334 12.6667 10.2909Z" fill="white" />
-															</svg>
-														</div>
-													</div>
-												</div>
-											</div>
-										</a>
-										<a href="#" class="campaign-item campaign-item--active" data-ripple>
-											<div class="campaign-item__body">
-												<div class="campaign-item__left">
-													<div class="profile profile-size--s">
-														<div class="profile__body">
-															<div class="profile__icon">
-																<img src="img/profile-avatars/logo.png" alt="image">
-															</div>
-															<div class="profile__info">
-																<div class="profile__name">
-																	Campaign Name
-																</div>
-															</div>
-														</div>
-
-													</div>
-												</div>
-												<div class="campaign-item__right">
-													<div class="tags tags--project">
-														<div class="tag tag--active">
-															<div class="svg-icon">
-																<svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
-																	<path opacity="0.3" d="M6.5 11C9.2615 11 11.5 8.7615 11.5 6C11.5 3.2385 9.2615 1 6.5 1C3.7385 1 1.5 3.2385 1.5 6C1.5 8.7615 3.7385 11 6.5 11Z" fill="#101010" />
-																	<path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 3.625C6.59946 3.625 6.69484 3.66451 6.76516 3.73483C6.83549 3.80516 6.875 3.90054 6.875 4V5.845L8.015 6.985C8.05184 7.01933 8.08139 7.06073 8.10189 7.10673C8.12239 7.15273 8.13341 7.20239 8.1343 7.25274C8.13518 7.30309 8.12592 7.3531 8.10706 7.3998C8.0882 7.44649 8.06013 7.48891 8.02452 7.52452C7.98891 7.56013 7.94649 7.5882 7.8998 7.60706C7.8531 7.62592 7.80309 7.63518 7.75274 7.6343C7.70239 7.63341 7.65273 7.62239 7.60673 7.60189C7.56073 7.58139 7.51933 7.55184 7.485 7.515L6.235 6.265C6.16465 6.19474 6.12509 6.09942 6.125 6V4C6.125 3.90054 6.16451 3.80516 6.23484 3.73483C6.30516 3.66451 6.40054 3.625 6.5 3.625Z" fill="#101010" />
-																</svg>
-															</div>
-															Active
-														</div>
-													</div>
-													<div class="campaign-item__sum">
-														<p class="heading-sm">
-															$3,205
-														</p>
-													</div>
-													<div class="campaign-item__platform">
-														<div class="svg-icon">
-															<svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-sm" width="20" height="20" viewBox="0 0 20 20" fill="none">
-																<path d="M10 3.33337C1.80953 3.33337 1.66667 4.08489 1.66667 10C1.66667 15.9152 1.80953 16.6667 10 16.6667C18.1905 16.6667 18.3333 15.9152 18.3333 10C18.3333 4.08489 18.1905 3.33337 10 3.33337ZM12.6667 10.2909L8.92858 12.1091C8.59524 12.2667 8.33334 12.0849 8.33334 11.7091V8.29095C8.33334 7.91519 8.60715 7.73337 8.92858 7.89095L12.6667 9.70913C13 9.86671 13 10.1334 12.6667 10.2909Z" fill="white" />
-															</svg>
-														</div>
-													</div>
-												</div>
-											</div>
-										</a>
-										<a href="#" class="campaign-item campaign-item--active" data-ripple>
-											<div class="campaign-item__body">
-												<div class="campaign-item__left">
-													<div class="profile profile-size--s">
-														<div class="profile__body">
-															<div class="profile__icon">
-																<img src="img/profile-avatars/logo.png" alt="image">
-															</div>
-															<div class="profile__info">
-																<div class="profile__name">
-																	Campaign Name
-																</div>
-															</div>
-														</div>
-
-													</div>
-												</div>
-												<div class="campaign-item__right">
-													<div class="tags tags--project">
-														<div class="tag tag--active">
-															<div class="svg-icon">
-																<svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
-																	<path opacity="0.3" d="M6.5 11C9.2615 11 11.5 8.7615 11.5 6C11.5 3.2385 9.2615 1 6.5 1C3.7385 1 1.5 3.2385 1.5 6C1.5 8.7615 3.7385 11 6.5 11Z" fill="#101010" />
-																	<path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 3.625C6.59946 3.625 6.69484 3.66451 6.76516 3.73483C6.83549 3.80516 6.875 3.90054 6.875 4V5.845L8.015 6.985C8.05184 7.01933 8.08139 7.06073 8.10189 7.10673C8.12239 7.15273 8.13341 7.20239 8.1343 7.25274C8.13518 7.30309 8.12592 7.3531 8.10706 7.3998C8.0882 7.44649 8.06013 7.48891 8.02452 7.52452C7.98891 7.56013 7.94649 7.5882 7.8998 7.60706C7.8531 7.62592 7.80309 7.63518 7.75274 7.6343C7.70239 7.63341 7.65273 7.62239 7.60673 7.60189C7.56073 7.58139 7.51933 7.55184 7.485 7.515L6.235 6.265C6.16465 6.19474 6.12509 6.09942 6.125 6V4C6.125 3.90054 6.16451 3.80516 6.23484 3.73483C6.30516 3.66451 6.40054 3.625 6.5 3.625Z" fill="#101010" />
-																</svg>
-															</div>
-															Active
-														</div>
-													</div>
-													<div class="campaign-item__sum">
-														<p class="heading-sm">
-															$3,205
-														</p>
-													</div>
-													<div class="campaign-item__platform">
-														<div class="svg-icon">
-															<svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-sm" width="20" height="20" viewBox="0 0 20 20" fill="none">
-																<path d="M10 3.33337C1.80953 3.33337 1.66667 4.08489 1.66667 10C1.66667 15.9152 1.80953 16.6667 10 16.6667C18.1905 16.6667 18.3333 15.9152 18.3333 10C18.3333 4.08489 18.1905 3.33337 10 3.33337ZM12.6667 10.2909L8.92858 12.1091C8.59524 12.2667 8.33334 12.0849 8.33334 11.7091V8.29095C8.33334 7.91519 8.60715 7.73337 8.92858 7.89095L12.6667 9.70913C13 9.86671 13 10.1334 12.6667 10.2909Z" fill="white" />
-															</svg>
-														</div>
-													</div>
-												</div>
-											</div>
-										</a>
-										<a href="#" class="campaign-item campaign-item--completed" data-ripple>
-											<div class="campaign-item__body">
-												<div class="campaign-item__left">
-													<div class="profile profile-size--s">
-														<div class="profile__body">
-															<div class="profile__icon">
-																<img src="img/profile-avatars/logo.png" alt="image">
-															</div>
-															<div class="profile__info">
-																<div class="profile__name">
-																	Campaign Name Campaign Name
-																</div>
-															</div>
-														</div>
-
-													</div>
-												</div>
-												<div class="campaign-item__right">
-													<div class="tags tags--project">
-														<div class="tag tag--completed">
-															<div class="svg-icon">
-																<svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
-																	<path opacity="0.3" d="M6.5 11C4.143 11 2.9645 11 2.232 10.2675C1.5 9.536 1.5 8.357 1.5 6C1.5 3.643 1.5 2.4645 2.232 1.732C2.965 1 4.143 1 6.5 1C8.857 1 10.0355 1 10.7675 1.732C11.5 2.465 11.5 3.643 11.5 6C11.5 8.357 11.5 9.5355 10.7675 10.2675C10.036 11 8.857 11 6.5 11Z" fill="#101010" />
-																	<path d="M9.3455 3.90188C9.44443 3.99926 9.5 4.13125 9.5 4.26888C9.5 4.4065 9.44443 4.5385 9.3455 4.63588L5.82357 8.09812C5.72451 8.19537 5.59024 8.25 5.45024 8.25C5.31024 8.25 5.17597 8.19537 5.07692 8.09812L3.66814 6.71322C3.61624 6.66568 3.57461 6.60834 3.54573 6.54464C3.51686 6.48093 3.50133 6.41216 3.50008 6.34243C3.49883 6.2727 3.51188 6.20343 3.53845 6.13877C3.56502 6.0741 3.60457 6.01536 3.65473 5.96604C3.7049 5.91673 3.76465 5.87785 3.83044 5.85173C3.89622 5.82561 3.96668 5.81278 4.03761 5.81401C4.10854 5.81524 4.1785 5.83051 4.2433 5.85889C4.3081 5.88728 4.36643 5.9282 4.41479 5.97923L5.45024 6.99713L8.59885 3.90188C8.6979 3.80463 8.83218 3.75 8.97217 3.75C9.11217 3.75 9.24645 3.80463 9.3455 3.90188Z" fill="#101010" />
-																</svg>
-															</div>
-															Completed
-														</div>
-													</div>
-													<div class="campaign-item__sum">
-														<p class="heading-sm">
-															$3,205
-														</p>
-													</div>
-													<div class="campaign-item__platform">
-														<div class="svg-icon">
-															<svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-sm" width="20" height="20" viewBox="0 0 20 20" fill="none">
-																<path d="M10 3.33337C1.80953 3.33337 1.66667 4.08489 1.66667 10C1.66667 15.9152 1.80953 16.6667 10 16.6667C18.1905 16.6667 18.3333 15.9152 18.3333 10C18.3333 4.08489 18.1905 3.33337 10 3.33337ZM12.6667 10.2909L8.92858 12.1091C8.59524 12.2667 8.33334 12.0849 8.33334 11.7091V8.29095C8.33334 7.91519 8.60715 7.73337 8.92858 7.89095L12.6667 9.70913C13 9.86671 13 10.1334 12.6667 10.2909Z" fill="white" />
-															</svg>
-														</div>
-													</div>
-												</div>
-											</div>
-										</a>
-										<a href="#" class="campaign-item campaign-item--cancelled" data-ripple>
-											<div class="campaign-item__body">
-												<div class="campaign-item__left">
-													<div class="profile profile-size--s">
-														<div class="profile__body">
-															<div class="profile__icon">
-																<img src="img/profile-avatars/logo.png" alt="image">
-															</div>
-															<div class="profile__info">
-																<div class="profile__name">
-																	Campaign Name
-																</div>
-															</div>
-														</div>
-
-													</div>
-												</div>
-												<div class="campaign-item__right">
-													<div class="tags tags--project">
-														<div class="tag tag--cancelled">
-															<div class="svg-icon">
-																<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-																	<path opacity="0.3" d="M8.0785 1.901L8.4215 2.104C9.436 2.705 9.943 3.0055 10.2215 3.5C10.5 3.995 10.5 4.595 10.5 5.797V6.203C10.5 7.4045 10.5 8.0055 10.2215 8.5C9.943 8.995 9.436 9.295 8.4215 9.8955L8.0785 10.099C7.064 10.6995 6.557 11 6 11C5.443 11 4.936 10.7 3.9215 10.099L3.5785 9.8955C2.564 9.2955 2.057 8.9945 1.7785 8.5C1.5 8.005 1.5 7.405 1.5 6.203V5.797C1.5 4.595 1.5 3.9945 1.7785 3.5C2.057 3.005 2.564 2.705 3.5785 2.104L3.9215 1.901C4.936 1.3005 5.443 1 6 1C6.557 1 7.064 1.3 8.0785 1.901Z" fill="#101010" />
-																	<path d="M4.42096 3.86045L6 5.43942L7.57086 3.86863C7.60556 3.8317 7.64736 3.80215 7.69376 3.78177C7.74015 3.76138 7.79018 3.75058 7.84085 3.75C7.94935 3.75 8.0534 3.7931 8.13012 3.86981C8.20683 3.94653 8.24993 4.05057 8.24993 4.15906C8.25089 4.20921 8.24158 4.25903 8.22259 4.30546C8.2036 4.35188 8.17531 4.39394 8.13948 4.42904L6.54817 5.99984L8.13948 7.59109C8.2069 7.65705 8.24644 7.74636 8.24993 7.84062C8.24993 7.94911 8.20683 8.05315 8.13012 8.12987C8.0534 8.20658 7.94935 8.24968 7.84085 8.24968C7.78872 8.25184 7.7367 8.24314 7.68811 8.22412C7.63952 8.20511 7.59541 8.1762 7.55859 8.13923L6 6.56025L4.42505 8.13514C4.39048 8.17084 4.34919 8.19934 4.30355 8.219C4.25791 8.23866 4.20883 8.24908 4.15915 8.24968C4.05065 8.24968 3.9466 8.20658 3.86988 8.12987C3.79317 8.05315 3.75007 7.94911 3.75007 7.84062C3.74911 7.79046 3.75842 7.74065 3.77741 7.69422C3.7964 7.64779 3.82469 7.60574 3.86052 7.57063L5.45183 5.99984L3.86052 4.40859C3.7931 4.34263 3.75356 4.25331 3.75007 4.15906C3.75007 4.05057 3.79317 3.94653 3.86988 3.86981C3.9466 3.7931 4.05065 3.75 4.15915 3.75C4.25732 3.75123 4.35141 3.79091 4.42096 3.86045Z" fill="#101010" />
-																</svg>
-															</div>
-															Cancelled
-														</div>
-													</div>
-													<div class="campaign-item__sum">
-														<p class="heading-sm">
-															$3,205
-														</p>
-													</div>
-													<div class="campaign-item__platform">
-														<div class="svg-icon">
-															<svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-sm" width="20" height="20" viewBox="0 0 20 20" fill="none">
-																<path d="M10 3.33337C1.80953 3.33337 1.66667 4.08489 1.66667 10C1.66667 15.9152 1.80953 16.6667 10 16.6667C18.1905 16.6667 18.3333 15.9152 18.3333 10C18.3333 4.08489 18.1905 3.33337 10 3.33337ZM12.6667 10.2909L8.92858 12.1091C8.59524 12.2667 8.33334 12.0849 8.33334 11.7091V8.29095C8.33334 7.91519 8.60715 7.73337 8.92858 7.89095L12.6667 9.70913C13 9.86671 13 10.1334 12.6667 10.2909Z" fill="white" />
-															</svg>
-														</div>
-													</div>
-												</div>
-											</div>
-										</a>
+									<div class="widget-info">
+										<p>
+											Nothing here yet. Let's get started!
+										</p>
 									</div>
 
 								</div>
@@ -724,28 +503,28 @@
 								</div>
 								<div class="widget__body">
 									<div class="widget-stats__list">
-										<div class="widget-stats__col">
+										<div class="widget-stats__col empty">
 											<span>
 												This week
 											</span>
 											<p class="text-color-green">
-												$<span data-digits-counter>1,280</span>
+												$<span data-digits-counter>0</span>
 											</p>
 										</div>
-										<div class="widget-stats__col">
+										<div class="widget-stats__col empty">
 											<span>
 												This month
 											</span>
 											<p class="text-color-green">
-												$<span data-digits-counter>3,570</span>
+												$<span data-digits-counter>0</span>
 											</p>
 										</div>
-										<div class="widget-stats__col">
+										<div class="widget-stats__col empty">
 											<span>
 												Lifetime
 											</span>
 											<p class="text-color-green">
-												$<span data-digits-counter>49,710</span>
+												$<span data-digits-counter>0</span>
 											</p>
 										</div>
 									</div>
@@ -759,28 +538,28 @@
 								</div>
 								<div class="widget__body">
 									<div class="widget-stats__list mb-5">
-										<div class="widget-stats__col">
+										<div class="widget-stats__col empty">
 											<span>
 												This week
 											</span>
 											<p class="text-color-green">
-												$<span data-digits-counter>560123</span>
+												$<span data-digits-counter>0</span>
 											</p>
 										</div>
-										<div class="widget-stats__col">
+										<div class="widget-stats__col empty">
 											<span>
 												This month
 											</span>
 											<p class="text-color-green">
-												$<span data-digits-counter>123,261</span>
+												$<span data-digits-counter>0</span>
 											</p>
 										</div>
-										<div class="widget-stats__col">
+										<div class="widget-stats__col empty">
 											<span>
 												Lifetime
 											</span>
 											<p class="text-color-green">
-												$<span data-digits-counter>12,800,914</span>
+												$<span data-digits-counter>0</span>
 											</p>
 										</div>
 									</div>
@@ -827,6 +606,8 @@
 					</div>
 				</div>
 			</div>
+
+
 		</main>
 		<footer class="footer">
 			<div class="footer__container">

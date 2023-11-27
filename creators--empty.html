@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20231127035057">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.tailwindcss.com?_v=20231127035057"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header" data-watch data-watch-once>
+			<div class="header__container">
+				<div class="header__content animate__animated animate__fadeInDown">
+					<div class="header__left">
+						<a href="#" class="header__logo">
+							<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+								<path d="M11.875 15.625C11.875 13.5539 13.5539 11.875 15.625 11.875H24.375C26.4461 11.875 28.125 13.5539 28.125 15.625V24.375C28.125 26.4461 26.4461 28.125 24.375 28.125H15.625C13.5539 28.125 11.875 26.4461 11.875 24.375V15.625Z" fill="url(#paint0_linear_322_30477)" />
+								<path d="M3.4375 10.3125C5.33598 10.3125 6.875 11.8515 6.875 13.75V28.125C6.875 30.8864 9.11354 33.125 11.875 33.125H26.25C28.1485 33.125 29.6875 34.664 29.6875 36.5625C29.6875 38.461 28.1485 40 26.25 40H11.875C5.31662 40 0 34.6834 0 28.125V13.75C0 11.8515 1.53902 10.3125 3.4375 10.3125Z" fill="url(#paint1_linear_322_30477)" />
+								<path d="M36.5625 29.6875C34.664 29.6875 33.125 28.1485 33.125 26.25L33.125 11.875C33.125 9.11362 30.8865 6.875 28.125 6.875L13.75 6.875C11.8515 6.875 10.3125 5.33598 10.3125 3.4375C10.3125 1.53902 11.8515 -1.6597e-07 13.75 0L28.125 1.2567e-06C34.6834 1.83005e-06 40 5.31662 40 11.875L40 26.25C40 28.1485 38.461 29.6875 36.5625 29.6875Z" fill="url(#paint2_linear_322_30477)" />
+								<defs>
+									<linearGradient id="paint0_linear_322_30477" x1="20" y1="11.875" x2="20" y2="28.125" gradientUnits="userSpaceOnUse">
+										<stop stop-color="#03E39E" />
+										<stop offset="1" stop-color="#03986A" />
+									</linearGradient>
+									<linearGradient id="paint1_linear_322_30477" x1="14.8438" y1="10.3125" x2="14.8438" y2="40" gradientUnits="userSpaceOnUse">
+										<stop stop-color="#7D72CB" />
+										<stop offset="1" stop-color="#4B3EA8" />
+									</linearGradient>
+									<linearGradient id="paint2_linear_322_30477" x1="25.1562" y1="0" x2="25.1563" y2="29.6875" gradientUnits="userSpaceOnUse">
+										<stop stop-color="#7D72CB" />
+										<stop offset="1" stop-color="#4B3EA8" />
+									</linearGradient>
+								</defs>
+							</svg>
+						</a>
+					</div>
+					<div class="header__center">
+						<div class="header__menu menu">
+
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="#" class="menu__link active">
+											<div class="svg-icon">
+												<svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="16" viewBox="0 0 16 16" fill="none">
+													<path opacity="0.5" d="M1.33334 4.33331C1.33334 2.91931 1.33334 2.21198 1.77267 1.77265C2.212 1.33331 2.91934 1.33331 4.33334 1.33331C5.74734 1.33331 6.45467 1.33331 6.894 1.77265C7.33334 2.21198 7.33334 2.91931 7.33334 4.33331C7.33334 5.74731 7.33334 6.45465 6.894 6.89398C6.45467 7.33331 5.74734 7.33331 4.33334 7.33331C2.91934 7.33331 2.212 7.33331 1.77267 6.89398C1.33334 6.45465 1.33334 5.74731 1.33334 4.33331ZM8.66667 11.6666C8.66667 10.2526 8.66667 9.54531 9.106 9.10598C9.54534 8.66665 10.2527 8.66665 11.6667 8.66665C13.0807 8.66665 13.788 8.66665 14.2273 9.10598C14.6667 9.54531 14.6667 10.2526 14.6667 11.6666C14.6667 13.0806 14.6667 13.788 14.2273 14.2273C13.788 14.6666 13.0807 14.6666 11.6667 14.6666C10.2527 14.6666 9.54534 14.6666 9.106 14.2273C8.66667 13.788 8.66667 13.0806 8.66667 11.6666Z" fill="white" />
+													<path d="M1.33334 11.6666C1.33334 10.2526 1.33334 9.54531 1.77267 9.10598C2.212 8.66665 2.91934 8.66665 4.33334 8.66665C5.74734 8.66665 6.45467 8.66665 6.894 9.10598C7.33334 9.54531 7.33334 10.2526 7.33334 11.6666C7.33334 13.0806 7.33334 13.788 6.894 14.2273C6.45467 14.6666 5.74734 14.6666 4.33334 14.6666C2.91934 14.6666 2.212 14.6666 1.77267 14.2273C1.33334 13.788 1.33334 13.0806 1.33334 11.6666ZM8.66667 4.33331C8.66667 2.91931 8.66667 2.21198 9.106 1.77265C9.54534 1.33331 10.2527 1.33331 11.6667 1.33331C13.0807 1.33331 13.788 1.33331 14.2273 1.77265C14.6667 2.21198 14.6667 2.91931 14.6667 4.33331C14.6667 5.74731 14.6667 6.45465 14.2273 6.89398C13.788 7.33331 13.0807 7.33331 11.6667 7.33331C10.2527 7.33331 9.54534 7.33331 9.106 6.89398C8.66667 6.45465 8.66667 5.74731 8.66667 4.33331Z" fill="white" />
+												</svg>
+											</div>
+											Overview
+										</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">
+											<div class="svg-icon">
+												<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-stroke icon--size-s" width="16" height="16" viewBox="0 0 16 16" fill="none">
+
+													<path id="Vector" opacity="0.16" d="M12.6667 7.33333C12.6667 8.74782 12.1048 10.1044 11.1046 11.1046C10.1044 12.1048 8.74782 12.6667 7.33333 12.6667C5.91885 12.6667 4.56229 12.1048 3.5621 11.1046C2.5619 10.1044 2 8.74782 2 7.33333C2 5.91885 2.5619 4.56229 3.5621 3.5621C4.56229 2.5619 5.91885 2 7.33333 2C8.74782 2 10.1044 2.5619 11.1046 3.5621C12.1048 4.56229 12.6667 5.91885 12.6667 7.33333Z" fill="white" />
+													<path id="Vector_2" d="M14 14L11.1047 11.1047M11.1047 11.1047C11.5999 10.6094 11.9928 10.0215 12.2608 9.37438C12.5288 8.72729 12.6668 8.03375 12.6668 7.33335C12.6668 6.63295 12.5289 5.9394 12.2608 5.29232C11.9928 4.64523 11.5999 4.05727 11.1047 3.56202C10.6094 3.06676 10.0215 2.6739 9.37436 2.40586C8.72728 2.13783 8.03373 1.99988 7.33333 1.99988C6.63293 1.99988 5.93939 2.13783 5.2923 2.40586C4.64522 2.6739 4.05726 3.06676 3.562 3.56202C2.56178 4.56224 1.99986 5.91882 1.99986 7.33335C1.99986 8.74787 2.56178 10.1045 3.562 11.1047C4.56222 12.1049 5.91881 12.6668 7.33333 12.6668C8.74786 12.6668 10.1044 12.1049 11.1047 11.1047Z" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+
+												</svg>
+											</div>
+											Campaigns
+											<div class="badge badge--numeric">
+												4
+											</div>
+										</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">
+											<div class="svg-icon">
+												<svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="16" viewBox="0 0 16 16" fill="none">
+													<g id="Creators">
+														<g id="Subtract" opacity="0.5">
+															<path d="M7.99998 1.6001C7.99998 1.6001 7.99998 1.6001 7.99998 1.6001V1.6001Z" fill="white" />
+															<path d="M8.09915 5.59764C8.0662 5.59927 8.03314 5.6001 7.99999 5.6001C7.99998 5.6001 7.99999 5.6001 7.99999 5.6001" fill="white" />
+															<path d="M13.5313 5.13147C13.8314 4.83141 14 4.42444 14 4.0001C14 3.57575 13.8314 3.16878 13.5313 2.86873C13.2313 2.56867 12.8243 2.4001 12.4 2.4001C11.9756 2.4001 11.5687 2.56867 11.2686 2.86873C10.9685 3.16878 10.8 3.57575 10.8 4.0001C10.8 4.42444 10.9685 4.83141 11.2686 5.13147C11.5687 5.43153 11.9756 5.6001 12.4 5.6001C12.8243 5.6001 13.2313 5.43153 13.5313 5.13147Z" fill="white" />
+															<path d="M4.73135 5.13147C4.43129 5.43153 4.02432 5.6001 3.59998 5.6001C3.17563 5.6001 2.76866 5.43153 2.4686 5.13147C2.16855 4.83141 1.99998 4.42444 1.99998 4.0001C1.99998 3.57575 2.16855 3.16878 2.4686 2.86873C2.76866 2.56867 3.17563 2.4001 3.59998 2.4001C4.02432 2.4001 4.43129 2.56867 4.73135 2.86873C5.0314 3.16878 5.19998 3.57575 5.19998 4.0001C5.19998 4.42444 5.0314 4.83141 4.73135 5.13147Z" fill="white" />
+															<path d="M8.15865 14.3962C8.10593 14.3988 8.05303 14.4001 7.99999 14.4001C7.99998 14.4001 7.99999 14.4001 7.99999 14.4001" fill="white" />
+															<path d="M4.30318 6.4001C4.11198 6.6865 3.99998 7.0297 3.99998 7.4001V11.2001C3.99916 11.7427 4.10914 12.2798 4.32318 12.7785C3.9838 12.8246 3.63848 12.7976 3.31043 12.6992C2.98237 12.6008 2.67918 12.4333 2.42122 12.208C2.16326 11.9827 1.95651 11.7048 1.81486 11.393C1.67321 11.0811 1.59994 10.7426 1.59998 10.4001V7.4001C1.59998 6.8481 2.04798 6.4001 2.59998 6.4001H4.30318Z" fill="white" />
+															<path d="M11.6768 12.7785C11.8848 12.2945 12 11.7601 12 11.2001V7.4001C12 7.0297 11.8888 6.6865 11.6968 6.4001H13.4C13.952 6.4001 14.4 6.8481 14.4 7.4001V10.4001C14.4 10.7426 14.3267 11.0811 14.1851 11.393C14.0434 11.7048 13.8367 11.9827 13.5787 12.208C13.3208 12.4333 13.0176 12.6008 12.6895 12.6992C12.3615 12.7976 12.0162 12.8246 11.6768 12.7785Z" fill="white" />
+														</g>
+														<g id="Intersect">
+															<path d="M9.4142 5.01431C9.78927 4.63924 9.99999 4.13053 9.99999 3.6001C9.99999 3.06966 9.78927 2.56096 9.4142 2.18588C9.03913 1.81081 8.53042 1.6001 7.99999 1.6001C7.46956 1.6001 6.96085 1.81081 6.58577 2.18588C6.2107 2.56096 5.99999 3.06966 5.99999 3.6001C5.99999 4.13053 6.2107 4.63924 6.58577 5.01431C6.96085 5.38938 7.46956 5.6001 7.99999 5.6001C8.53042 5.6001 9.03913 5.38938 9.4142 5.01431Z" fill="white" />
+															<path d="M5.79999 6.4001C5.24799 6.4001 4.79999 6.8481 4.79999 7.4001V11.2001C4.79999 12.0488 5.13713 12.8627 5.73725 13.4628C6.33736 14.063 7.1513 14.4001 7.99999 14.4001C8.84868 14.4001 9.66261 14.063 10.2627 13.4628C10.8628 12.8627 11.2 12.0488 11.2 11.2001V7.4001C11.2 6.8481 10.752 6.4001 10.2 6.4001H5.79999Z" fill="white" />
+														</g>
+													</g>
+												</svg>
+											</div>
+											Creators
+
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+
+					</div>
+					<div class="header__right">
+						<div class="header__actions">
+							<a href="#" class="header__actions-button action-button--notifications">
+								<div class="svg-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-sm" width="20" height="20" viewBox="0 0 20 20" fill="none">
+
+										<path id="Vector" opacity="0.5" d="M15.6251 7.50002V8.08669C15.6251 8.79085 15.8251 9.47919 16.2017 10.065L17.1251 11.5009C17.9676 12.8125 17.3242 14.595 15.8584 15.0092C12.0282 16.0942 7.97192 16.0942 4.14172 15.0092C2.67588 14.595 2.03255 12.8125 2.87505 11.5009L3.79839 10.065C4.17636 9.47449 4.37681 8.78783 4.37589 8.08669V7.50002C4.37589 4.27835 6.89422 1.66669 10.0001 1.66669C13.1059 1.66669 15.6251 4.27835 15.6251 7.50002Z" fill="white" />
+										<path id="Vector_2" d="M6.03589 15.4542C6.30818 16.2909 6.83829 17.0201 7.5503 17.5371C8.26231 18.0542 9.11969 18.3327 9.99964 18.3327C10.8796 18.3327 11.737 18.0542 12.449 17.5371C13.161 17.0201 13.6911 16.2909 13.9634 15.4542C11.3426 15.9458 8.65756 15.9458 6.03589 15.4542Z" fill="white" />
+
+									</svg>
+
+								</div>
+								<div class="badge badge--pin">
+
+								</div>
+							</a>
+							<a href="#" class="header__actions-button action-button--settings">
+								<div class="svg-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-sm" width="20" height="20" viewBox="0 0 20 20" fill="none">
+										<path id="Vector" opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M11.8992 1.79335C11.5909 1.66669 11.1992 1.66669 10.4167 1.66669C9.63419 1.66669 9.24252 1.66669 8.93419 1.79335C8.52373 1.96186 8.197 2.28649 8.02585 2.69585C7.94752 2.88169 7.91752 3.09919 7.90502 3.41502C7.89946 3.64386 7.83563 3.86749 7.71956 4.06479C7.60349 4.26208 7.43901 4.42651 7.24168 4.54252C7.04064 4.65427 6.81464 4.71347 6.58462 4.71464C6.35461 4.71581 6.12802 4.6589 5.92585 4.54919C5.64419 4.40085 5.44002 4.31919 5.23835 4.29252C4.79715 4.23459 4.35091 4.35319 3.99669 4.62252C3.73169 4.82419 3.53585 5.16085 3.14502 5.83335C2.75335 6.50585 2.55835 6.84169 2.51419 7.17085C2.45585 7.60919 2.57585 8.05252 2.84752 8.40335C2.97085 8.56335 3.14502 8.69752 3.41419 8.86585C3.81169 9.11335 4.06669 9.53502 4.06669 10C4.06669 10.465 3.81169 10.8867 3.41502 11.1334C3.14502 11.3025 2.97085 11.4367 2.84669 11.5967C2.71259 11.77 2.61416 11.9681 2.55709 12.1797C2.50002 12.3912 2.48544 12.612 2.51419 12.8292C2.55835 13.1575 2.75335 13.4942 3.14502 14.1667C3.53669 14.8392 3.73169 15.175 3.99669 15.3775C4.35002 15.6467 4.79669 15.765 5.23835 15.7075C5.44002 15.6809 5.64419 15.5992 5.92585 15.4509C6.12812 15.341 6.35487 15.284 6.58504 15.2852C6.81522 15.2863 7.04137 15.3456 7.24252 15.4575C7.64752 15.6909 7.88752 16.12 7.90502 16.585C7.91752 16.9017 7.94752 17.1184 8.02585 17.3042C8.19585 17.7125 8.52252 18.0375 8.93419 18.2067C9.24252 18.3334 9.63419 18.3334 10.4167 18.3334C11.1992 18.3334 11.5909 18.3334 11.8992 18.2067C12.3096 18.0382 12.6364 17.7135 12.8075 17.3042C12.8859 17.1184 12.9159 16.9017 12.9284 16.585C12.945 16.12 13.1859 15.69 13.5917 15.4575C13.7927 15.3458 14.0187 15.2866 14.2487 15.2854C14.4788 15.2842 14.7053 15.3411 14.9075 15.4509C15.1892 15.5992 15.3934 15.6809 15.595 15.7075C16.0367 15.7659 16.4834 15.6467 16.8367 15.3775C17.1017 15.1759 17.2975 14.8392 17.6884 14.1667C18.08 13.4942 18.275 13.1584 18.3192 12.8292C18.3478 12.6119 18.3331 12.3911 18.2759 12.1796C18.2187 11.968 18.1201 11.7699 17.9859 11.5967C17.8625 11.4367 17.6884 11.3025 17.4192 11.1342C17.0217 10.8867 16.7667 10.465 16.7667 10C16.7667 9.53502 17.0217 9.11335 17.4184 8.86669C17.6884 8.69752 17.8625 8.56335 17.9867 8.40335C18.1208 8.23007 18.2192 8.03193 18.2763 7.82038C18.3334 7.60883 18.3479 7.38807 18.3192 7.17085C18.275 6.84252 18.08 6.50585 17.6884 5.83335C17.2967 5.16085 17.1017 4.82502 16.8367 4.62252C16.4825 4.35319 16.0362 4.23459 15.595 4.29252C15.3934 4.31919 15.1892 4.40085 14.9075 4.54919C14.7052 4.65904 14.4785 4.71603 14.2483 4.71487C14.0182 4.7137 13.792 4.65442 13.5909 4.54252C13.3937 4.4264 13.2294 4.26193 13.1135 4.06465C12.9975 3.86736 12.9338 3.64378 12.9284 3.41502C12.9159 3.09835 12.8859 2.88169 12.8075 2.69585C12.7228 2.49313 12.599 2.30909 12.4431 2.15424C12.2873 1.99938 12.1024 1.87675 11.8992 1.79335Z" fill="white" />
+										<path id="Vector_2" d="M12.9359 10C12.9359 11.3808 11.8075 12.5 10.4167 12.5C9.02502 12.5 7.89752 11.3808 7.89752 10C7.89752 8.61917 9.02502 7.5 10.4167 7.5C11.8084 7.5 12.9359 8.61917 12.9359 10Z" fill="white" />
+									</svg>
+								</div>
+							</a>
+						</div>
+						<div class="header__button">
+							<button type="button" class="header__actions-button menu__icon icon-menu"><span></span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__container">
+				<div class="page__header filters-block">
+					<div class="page__header-top lg:flex-nowrap flex-wrap">
+						<h2 class="basis-2/6 heading-3xl">
+							Creators
+						</h2>
+						<div class="page__controls">
+							<div class="filters">
+								<div class="filters__row flex-wrap">
+									<div class="filter__col">
+										<button class="filters__button button button-gray button-filter" data-ripple>
+											<div class="button__text">
+												<div class="svg-icon">
+													<svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="16" viewBox="0 0 16 16" fill="none">
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M3.3335 2H12.6668L5.8775 8.78933C5.76786 8.50843 5.58953 8.25951 5.35883 8.06533C5.20683 7.93333 4.99416 7.814 4.57016 7.57467L2.62816 6.48133C1.9955 6.126 1.6795 5.948 1.50683 5.66133C1.3335 5.374 1.3335 5.02733 1.3335 4.33533V3.87533C1.3335 2.99133 1.3335 2.54867 1.62683 2.274C1.91883 2 2.39016 2 3.3335 2Z" fill="white" />
+														<path opacity="0.5" d="M14.667 4.336V3.876C14.667 2.992 14.667 2.54933 14.3736 2.27467C14.0816 2 13.6103 2 12.667 2L5.87695 8.78933C5.91029 8.87533 5.93695 8.96467 5.95762 9.058C6.00029 9.248 6.00029 9.47067 6.00029 9.91533V11.6953C6.00029 12.3013 6.00029 12.6047 6.16829 12.8407C6.33629 13.0773 6.63495 13.194 7.23095 13.4273C8.48362 13.9167 9.10962 14.1613 9.55495 13.8827C10.0003 13.6047 10.0003 12.968 10.0003 11.6947V9.91467C10.0003 9.47067 10.0003 9.248 10.0423 9.058C10.1262 8.66935 10.3373 8.31979 10.6423 8.06467C10.7936 7.93333 11.0056 7.814 11.4303 7.57467L13.3723 6.48133C14.0043 6.126 14.321 5.948 14.4936 5.66133C14.667 5.37467 14.667 5.028 14.667 4.336Z" fill="white" />
+													</svg>
+												</div>
+												Filter
+												<div class="badge badge--numeric">
+													4
+												</div>
+											</div>
+
+										</button>
+									</div>
+
+									<div class="filter__col flex-auto">
+										<div class="select-md select-md-width">
+											<select name="form[]" data-pseudo-label="Sort by:" data-class-modif="combobox">
+												<option value="1" selected>Highest subscribers</option>
+												<option value="2">Пункт №2 Пункт №2 Пункт №2 Пункт №2</option>
+												<option value="3">Пункт №3</option>
+												<option value="4">Пункт №4</option>
+											</select>
+										</div>
+
+									</div>
+									<div class="filter__col  flex-auto md:max-w-[17.5rem]">
+										<div class="filter__search-block search-block">
+											<div class="search-block__input">
+												<input autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="Search" class="input input-md">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="page__header-bottom">
+						<div class="filters__more mt-4" hidden>
+							<div class="filters__row flex-wrap">
+								<div class="!grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2  gap-4 w-full">
+									<div class="filter__col flex-auto basis-1/6">
+										<div class="select-md select-md-width">
+											<select name="form[]" data-pseudo-label="Platform:" data-class-modif="combobox">
+												<option value="1" data-class="platform platform--size-sm" data-asset="img/icons/formkit_youtube.svg">Youtube 1 </option>
+												<option value="1" data-class="platform platform--size-sm" data-asset="img/icons/formkit_youtube.svg">Youtube 2</option>
+												<option value="1" data-class="platform platform--size-sm" data-asset="img/icons/formkit_youtube.svg">Youtube 3</option>
+											</select>
+										</div>
+
+									</div>
+									<div class="filter__col flex-auto basis-1/6">
+										<div class="select-md select-md-width">
+											<select name="form[]" data-pseudo-label="Engagement:" data-class-modif="combobox">
+												<option value="1" selected>2-6%</option>
+												<option value="2">Пункт №2 Пункт №2 Пункт №2 Пункт №2</option>
+												<option value="3">Пункт №3</option>
+												<option value="4">Пункт №4</option>
+											</select>
+										</div>
+
+									</div>
+									<div class="filter__col flex-auto basis-1/6">
+										<div class="select-md select-md-width">
+											<select name="form[]" data-pseudo-label="Average views:" data-class-modif="combobox">
+												<option value="1" selected>50K+</option>
+												<option value="2">Пункт №2 Пункт №2 Пункт №2 Пункт №2</option>
+												<option value="3">Пункт №3</option>
+												<option value="4">Пункт №4</option>
+											</select>
+										</div>
+
+									</div>
+									<div class="filter__col flex-auto basis-1/6">
+										<div class="select-md select-md-width">
+											<select name="form[]" data-pseudo-label="Last posted:" data-class-modif="combobox">
+												<option value="1" selected>1 week</option>
+												<option value="2">Пункт №2 Пункт №2 Пункт №2 Пункт №2</option>
+												<option value="3">Пункт №3</option>
+												<option value="4">Пункт №4</option>
+											</select>
+										</div>
+
+									</div>
+									<div class="filter__col flex-auto basis-1/6">
+										<div class="select-md select-md-width">
+											<div class="custom-select custom-select--checkbox select_combobox">
+												<div class="select__body">
+													<button type="button" class="select__title">
+														<span data-pseudo-label="Countries:" class="select__value _select-pseudo-label">
+															<span class="select__content"><span class="badge badge--numeric"></span></span>
+														</span>
+													</button>
+													<div class="select__options">
+														<div class="select__scroll">
+															<button class="select__option" data-value="1" type="button">
+																<div class="checkbox-button">
+																	<input id="cc_1" data-error="Помилка" checked class="checkbox__input" type="checkbox" value="1" name="form[]">
+																	<label for="cc_1" class="checkbox__label"><span class="checkbox__text">Текст</span></label>
+																</div>
+															</button>
+															<button class="select__option" data-value="2" type="button">
+																<div class="checkbox-button">
+																	<input id="cc_3" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																	<label for="cc_3" class="checkbox__label"><span class="checkbox__text">Текст ТекстТекст Текст Текст Текст Текст</span></label>
+																</div>
+															</button>
+															<button class="select__option" data-value="2" type="button">
+																<div class="checkbox-button">
+																	<input id="cc_2" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																	<label for="cc_2" class="checkbox__label"><span class="checkbox__text">Текст</span></label>
+																</div>
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="filter__col flex-auto basis-1/6">
+										<div class="select-md select-md-width">
+											<div class="custom-select custom-select--checkbox select_combobox">
+												<div class="select__body">
+													<button type="button" class="select__title">
+														<span data-pseudo-label="Gender:" class="select__value _select-pseudo-label">
+															<span class="select__content"><span class="badge badge--numeric"></span></span>
+														</span>
+													</button>
+													<div class="select__options">
+														<div class="select__scroll">
+															<button class="select__option" data-value="1" type="button">
+																<div class="checkbox-button">
+																	<input id="cc_1" data-error="Помилка" checked class="checkbox__input" type="checkbox" value="1" name="form[]">
+																	<label for="cc_1" class="checkbox__label"><span class="checkbox__text">Текст</span></label>
+																</div>
+															</button>
+															<button class="select__option" data-value="2" type="button">
+																<div class="checkbox-button">
+																	<input id="cc_3" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																	<label for="cc_3" class="checkbox__label"><span class="checkbox__text">Текст ТекстТекст Текст Текст Текст Текст</span></label>
+																</div>
+															</button>
+															<button class="select__option" data-value="2" type="button">
+																<div class="checkbox-button">
+																	<input id="cc_2" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																	<label for="cc_2" class="checkbox__label"><span class="checkbox__text">Текст</span></label>
+																</div>
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="filter__col flex-auto basis-1/6">
+										<div class="select-md select-md-width">
+											<div class="custom-select custom-select--checkbox select_combobox">
+												<div class="select__body">
+													<button type="button" class="select__title">
+														<span data-pseudo-label="Age:" class="select__value _select-pseudo-label">
+															<span class="select__content"><span class="badge badge--numeric"></span></span>
+														</span>
+													</button>
+													<div class="select__options">
+														<div class="select__scroll">
+															<button class="select__option" data-value="1" type="button">
+																<div class="checkbox-button">
+																	<input id="cc_1" data-error="Помилка" checked class="checkbox__input" type="checkbox" value="1" name="form[]">
+																	<label for="cc_1" class="checkbox__label"><span class="checkbox__text">Текст</span></label>
+																</div>
+															</button>
+															<button class="select__option" data-value="2" type="button">
+																<div class="checkbox-button">
+																	<input id="cc_3" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																	<label for="cc_3" class="checkbox__label"><span class="checkbox__text">Текст ТекстТекст Текст Текст Текст Текст</span></label>
+																</div>
+															</button>
+															<button class="select__option" data-value="2" type="button">
+																<div class="checkbox-button">
+																	<input id="cc_2" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																	<label for="cc_2" class="checkbox__label"><span class="checkbox__text">Текст</span></label>
+																</div>
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="filter__col flex-auto basis-1/6">
+										<div class="select-md select-md-width">
+											<div class="custom-select custom-select--checkbox select_combobox">
+												<div class="select__body">
+													<button type="button" class="select__title">
+														<span data-pseudo-label="Language:" class="select__value _select-pseudo-label">
+															<span class="select__content"><span class="badge badge--numeric"></span></span>
+														</span>
+													</button>
+													<div class="select__options">
+														<div class="select__scroll">
+															<button class="select__option" data-value="1" type="button">
+																<div class="checkbox-button">
+																	<input id="cc_1" data-error="Помилка" checked class="checkbox__input" type="checkbox" value="1" name="form[]">
+																	<label for="cc_1" class="checkbox__label"><span class="checkbox__text">Текст</span></label>
+																</div>
+															</button>
+															<button class="select__option" data-value="2" type="button">
+																<div class="checkbox-button">
+																	<input id="cc_3" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																	<label for="cc_3" class="checkbox__label"><span class="checkbox__text">Текст ТекстТекст Текст Текст Текст Текст</span></label>
+																</div>
+															</button>
+															<button class="select__option" data-value="2" type="button">
+																<div class="checkbox-button">
+																	<input id="cc_2" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																	<label for="cc_2" class="checkbox__label"><span class="checkbox__text">Текст</span></label>
+																</div>
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="filter__col flex-auto basis-1/6">
+										<div class="select-md select-md-width">
+											<div class="custom-select custom-select--checkbox select_combobox">
+												<div class="select__body">
+													<button type="button" class="select__title">
+														<span data-pseudo-label="Tags:" class="select__value _select-pseudo-label">
+															<span class="select__content"><span class="badge badge--numeric"></span></span>
+														</span>
+													</button>
+													<div class="select__options">
+														<div class="select__scroll">
+															<button class="select__option" data-value="1" type="button">
+																<div class="checkbox-button">
+																	<input id="cc_1" data-error="Помилка" checked class="checkbox__input" type="checkbox" value="1" name="form[]">
+																	<label for="cc_1" class="checkbox__label"><span class="checkbox__text">Текст</span></label>
+																</div>
+															</button>
+															<button class="select__option" data-value="2" type="button">
+																<div class="checkbox-button">
+																	<input id="cc_3" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																	<label for="cc_3" class="checkbox__label"><span class="checkbox__text">Текст ТекстТекст Текст Текст Текст Текст</span></label>
+																</div>
+															</button>
+															<button class="select__option" data-value="2" type="button">
+																<div class="checkbox-button">
+																	<input id="cc_2" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																	<label for="cc_2" class="checkbox__label"><span class="checkbox__text">Текст</span></label>
+																</div>
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="filter__cols-footer flex items-center gap-3 w-full">
+
+									<div class="filter__col">
+										<a href="#" class="link link--large filter__reset link--red">Reset all</a>
+									</div>
+									<div class="filter__col col-button ml-auto">
+										<a href="#" class="button button-medium button-primary fw">
+											<span class="button__text">Apply</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="creators mb-8">
+					<div class="logging logging--no-result">
+						<p class="md:heading-xl heading-lg mb-4">No Results</p>
+						<p class="logging__text">
+							Try adjusting your filters
+						</p>
+					</div>
+				</div>
+			</div>
+
+
+		</main>
+		<div id="popupTermsOfUse" aria-hidden="true" class="popup popup-lg">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<g id="close">
+								<path id="Vector" d="M7 7L17 17M7 17L17 7" stroke="white" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+							</g>
+						</svg>
+					</button>
+					<div class="popup__body">
+						<div class="popup__header">
+							<h5 class="title-h5">
+								Terms of Use
+							</h5>
+						</div>
+						<div class="popup__text">
+							<div class="popup__text-inner">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ornare risus imperdiet nibh egestas, at eleifend nisl gravida. Aliquam varius pellentesque odio, sit amet pretium risus hendrerit vel. Aenean ullamcorper sapien a eros imperdiet, id fringilla nunc convallis. Nulla facilisi. Cras vitae purus diam. Fusce sit amet mattis enim, a semper lacus. Donec ornare metus sit amet erat egestas, et ultricies massa ornare. Suspendisse ex mi, maximus eu scelerisque vitae, consequat volutpat velit. Curabitur sed ligula eget quam accumsan posuere. Aenean dictum nec ante id viverra. Nulla finibus libero dolor, malesuada lacinia risus rhoncus suscipit. Duis commodo, tellus ut aliquam molestie, enim erat posuere nulla, non rhoncus libero dolor sed arcu.
+								</p>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ornare risus imperdiet nibh egestas, at eleifend nisl gravida. Aliquam varius pellentesque odio, sit amet pretium risus hendrerit vel. Aenean ullamcorper sapien a eros imperdiet, id fringilla nunc convallis. Nulla facilisi. Cras vitae purus diam. Fusce sit amet mattis enim, a semper lacus. Donec ornare metus sit amet erat egestas, et ultricies massa ornare. Suspendisse ex mi, maximus eu scelerisque vitae, consequat volutpat velit. Curabitur sed ligula eget quam accumsan posuere. Aenean dictum nec ante id viverra. Nulla finibus libero dolor, malesuada lacinia risus rhoncus suscipit. Duis commodo, tellus ut aliquam molestie, enim erat posuere nulla, non rhoncus libero dolor sed arcu.
+								</p>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ornare risus imperdiet nibh egestas, at eleifend nisl gravida. Aliquam varius pellentesque odio, sit amet pretium risus hendrerit vel. Aenean ullamcorper sapien a eros imperdiet, id fringilla nunc convallis. Nulla facilisi. Cras vitae purus diam. Fusce sit amet mattis enim, a semper lacus. Donec ornare metus sit amet erat egestas, et ultricies massa ornare. Suspendisse ex mi, maximus eu scelerisque vitae, consequat volutpat velit. Curabitur sed ligula eget quam accumsan posuere. Aenean dictum nec ante id viverra. Nulla finibus libero dolor, malesuada lacinia risus rhoncus suscipit. Duis commodo, tellus ut aliquam molestie, enim erat posuere nulla, non rhoncus libero dolor sed arcu.
+								</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="popupPrivacyPolicy" aria-hidden="true" class="popup popup-lg">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<g id="close">
+								<path id="Vector" d="M7 7L17 17M7 17L17 7" stroke="white" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+							</g>
+						</svg>
+					</button>
+					<div class="popup__body">
+						<div class="popup__header">
+							<h5 class="title-h5">
+								Privacy Policy
+							</h5>
+						</div>
+						<div class="popup__text">
+							<div class="popup__text-inner">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ornare risus imperdiet nibh egestas, at eleifend nisl gravida. Aliquam varius pellentesque odio, sit amet pretium risus hendrerit vel. Aenean ullamcorper sapien a eros imperdiet, id fringilla nunc convallis. Nulla facilisi. Cras vitae purus diam. Fusce sit amet mattis enim, a semper lacus. Donec ornare metus sit amet erat egestas, et ultricies massa ornare. Suspendisse ex mi, maximus eu scelerisque vitae, consequat volutpat velit. Curabitur sed ligula eget quam accumsan posuere. Aenean dictum nec ante id viverra. Nulla finibus libero dolor, malesuada lacinia risus rhoncus suscipit. Duis commodo, tellus ut aliquam molestie, enim erat posuere nulla, non rhoncus libero dolor sed arcu.
+								</p>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ornare risus imperdiet nibh egestas, at eleifend nisl gravida. Aliquam varius pellentesque odio, sit amet pretium risus hendrerit vel. Aenean ullamcorper sapien a eros imperdiet, id fringilla nunc convallis. Nulla facilisi. Cras vitae purus diam. Fusce sit amet mattis enim, a semper lacus. Donec ornare metus sit amet erat egestas, et ultricies massa ornare. Suspendisse ex mi, maximus eu scelerisque vitae, consequat volutpat velit. Curabitur sed ligula eget quam accumsan posuere. Aenean dictum nec ante id viverra. Nulla finibus libero dolor, malesuada lacinia risus rhoncus suscipit. Duis commodo, tellus ut aliquam molestie, enim erat posuere nulla, non rhoncus libero dolor sed arcu.
+								</p>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ornare risus imperdiet nibh egestas, at eleifend nisl gravida. Aliquam varius pellentesque odio, sit amet pretium risus hendrerit vel. Aenean ullamcorper sapien a eros imperdiet, id fringilla nunc convallis. Nulla facilisi. Cras vitae purus diam. Fusce sit amet mattis enim, a semper lacus. Donec ornare metus sit amet erat egestas, et ultricies massa ornare. Suspendisse ex mi, maximus eu scelerisque vitae, consequat volutpat velit. Curabitur sed ligula eget quam accumsan posuere. Aenean dictum nec ante id viverra. Nulla finibus libero dolor, malesuada lacinia risus rhoncus suscipit. Duis commodo, tellus ut aliquam molestie, enim erat posuere nulla, non rhoncus libero dolor sed arcu.
+								</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="popupCampaign" aria-hidden="true" class="popup popup-campaign popup-xl">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__header mb-5 flex items-center gap-4 pr-4 flex-wrap ">
+						<div class="popup__header-brand-and-platform flex items-center gap-2">
+							<div class="brand-block block-container-bg">
+								<div class="flex items-center gap-2">
+									<div class="icon icon--size-m">
+										<img src="img/brands/netflix.png" alt="image">
+									</div>
+									<div>
+										<p class="text-body-md-medium !leading-none">
+											Netflix
+										</p>
+										<span class="text-secondary text-body-xs-medium">
+											Brand
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="platform-block block-container-bg">
+								<div class="flex items-center gap-2">
+									<div class="platform platform--size-l">
+										<img src="img/icons/formkit_youtube.svg" alt="image">
+									</div>
+									<div>
+										<p class="text-body-md-medium !leading-none">
+											Youtube
+										</p>
+										<span class="text-secondary text-body-xs-medium">
+											Platform
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h3 class="sm:heading-xl heading-lg">
+							Promote our new movie
+						</h3>
+					</div>
+					<button data-close type="button" class="popup__close">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<g id="close">
+								<path id="Vector" d="M7 7L17 17M7 17L17 7" stroke="white" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+							</g>
+						</svg>
+					</button>
+					<div class="popup__body sm:mx-0 -mx-2">
+						<div class="popup__inner background-secondary sm:p-6 p-4 sm:rounded-3xl rounded-2xl" data-simplebar>
+							<div class="popup__row">
+								<div class="popup__line relative">
+									<div class="popup-campaign__slider swiper">
+										<div class="popup-campaign__wrapper swiper-wrapper">
+											<div class="popup-campaign__slide swiper-slide slide">
+												<img src="img/cards/Thumbnail.jpg" alt="01">
+											</div>
+											<div class="popup-campaign__slide swiper-slide slide">
+												<img src="img/cards/Thumbnail.jpg" alt="01">
+											</div>
+											<div class="popup-campaign__slide swiper-slide slide">
+												<img src="img/cards/Thumbnail.jpg" alt="01">
+											</div>
+											<div class="popup-campaign__slide swiper-slide slide">
+												<img src="img/cards/Thumbnail.jpg" alt="01">
+											</div>
+											<div class="popup-campaign__slide swiper-slide slide">
+												<img src="img/cards/Thumbnail.jpg" alt="01">
+											</div>
+										</div>
+										<button type="button" class="slider-button-one swiper-button-prev">
+											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+												<path d="M23.3333 11.6667L15 20L23.3333 28.3334" stroke="#9A9CAC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+										<button type="button" class="slider-button-one swiper-button-next">
+											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+												<path d="M16.6667 11.6667L25 20L16.6667 28.3334" stroke="#9A9CAC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="popup__row">
+								<div class="popup__line">
+									<div class="popup-campaign__desc background-tertirary p-4 rounded-2xl">
+										<h5 class="sm:heading-lg heading-md mb-2">
+											Description
+										</h5>
+										<div data-showmore class="popup-showmore">
+											<div data-showmore-content="100" class="popup-showmore__content">
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum dui nec odio ullamcorper mattis. Nullam pellentesque orci nunc, a ornare dolor sagittis in. Maecenas fermentum eleifend erat, nec egestas neque rutrum euismod. Nam pulvinar felis metus, vitae hendrerit turpis efficitur non. Donec pretium quam quis arcu pharetra rhoncus. Etiam sem lorem, finibus eu sapien id, rutrum pharetra orci. Curabitur euismod quam eget nisl dapibus, id tristique velit mollis. Integer ac velit mi.
+												</p>
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum dui nec odio ullamcorper mattis. Nullam pellentesque orci nunc, a ornare dolor sagittis in. Maecenas fermentum eleifend erat, nec egestas neque rutrum euismod. Nam pulvinar felis metus, vitae hendrerit turpis efficitur non. Donec pretium quam quis arcu pharetra rhoncus. Etiam sem lorem, finibus eu sapien id, rutrum pharetra orci. Curabitur euismod quam eget nisl dapibus, id tristique velit mollis. Integer ac velit mi.
+												</p>
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum dui nec odio ullamcorper mattis. Nullam pellentesque orci nunc, a ornare dolor sagittis in. Maecenas fermentum eleifend erat, nec egestas neque rutrum euismod. Nam pulvinar felis metus, vitae hendrerit turpis efficitur non. Donec pretium quam quis arcu pharetra rhoncus. Etiam sem lorem, finibus eu sapien id, rutrum pharetra orci. Curabitur euismod quam eget nisl dapibus, id tristique velit mollis. Integer ac velit mi.
+												</p>
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum dui nec odio ullamcorper mattis. Nullam pellentesque orci nunc, a ornare dolor sagittis in. Maecenas fermentum eleifend erat, nec egestas neque rutrum euismod. Nam pulvinar felis metus, vitae hendrerit turpis efficitur non. Donec pretium quam quis arcu pharetra rhoncus. Etiam sem lorem, finibus eu sapien id, rutrum pharetra orci. Curabitur euismod quam eget nisl dapibus, id tristique velit mollis. Integer ac velit mi.
+												</p>
+											</div>
+											<button data-showmore-button type="button" class="popup-showmore__more"><span>See more</span><span>Hide</span></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="popup__row grid md:grid-cols-2 gap-6">
+								<div class="popup__line">
+									<div class="popup-deliverables">
+
+										<h5 class="sm:heading-lg heading-md mb-3 flex gap-2">
+											Deliverables
+											<span class="badge badge--numeric ">
+												4
+											</span>
+										</h5>
+										<div data-spollers class="deliverables-spollers">
+											<details class="deliverables-spollers__item item-required">
+												<summary class="deliverables-spollers__title" data-ripple>
+													<div class="deliverables-spollers__title-wrap">
+														<div>
+															<p>
+																1 Video (10 min or more)
+															</p>
+															<span>
+																Required
+															</span>
+														</div>
+													</div>
+												</summary>
+												<div class="deliverables-spollers__body spollers__body">
+													<div class="line">
+														<h6 class="line-title heading-sm">
+															Lorem.
+														</h6>
+														<p>
+															Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum dui nec odio ullamcorper mattis. Nullam pellentesque orci nunc, a ornare dolor sagittis in. Maecenas fermentum eleifend erat, nec egestas neque rutrum euismod. Nam pulvinar felis metus, vitae hendrerit turpis efficitur non. Donec pretium quam quis arcu pharetra rhoncus. Etiam sem lorem, finibus eu sapien id, rutrum pharetra orci. Curabitur euismod quam eget nisl dapibus, id tristique velit mollis. Integer ac velit mi.
+														</p>
+													</div>
+
+
+												</div>
+											</details>
+											<details class="deliverables-spollers__item item-required">
+												<summary class="deliverables-spollers__title" data-ripple>
+													<div class="deliverables-spollers__title-wrap">
+														<div>
+															<p>
+																1 Video (10 min or more) 1 Video (10 min or more) 1 Video (10 min or more)
+															</p>
+															<span>
+																Required
+															</span>
+														</div>
+													</div>
+												</summary>
+												<div class="deliverables-spollers__body spollers__body">
+													<div class="line">
+														<h6 class="line-title heading-sm">
+															Lorem.
+														</h6>
+														<p>
+															Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum dui nec odio ullamcorper mattis. Nullam pellentesque orci nunc, a ornare dolor sagittis in. Maecenas fermentum eleifend erat, nec egestas neque rutrum euismod. Nam pulvinar felis metus, vitae hendrerit turpis efficitur non. Donec pretium quam quis arcu pharetra rhoncus. Etiam sem lorem, finibus eu sapien id, rutrum pharetra orci. Curabitur euismod quam eget nisl dapibus, id tristique velit mollis. Integer ac velit mi.
+														</p>
+													</div>
+
+
+												</div>
+											</details>
+											<details class="deliverables-spollers__item">
+												<summary class="deliverables-spollers__title" data-ripple>
+													<div class="deliverables-spollers__title-wrap">
+														<div>
+															<p>
+																1 Video (10 min or more) 1 Video (10 min or more) 1 Video (10 min or more)
+															</p>
+														</div>
+													</div>
+												</summary>
+												<div class="deliverables-spollers__body spollers__body">
+													<div class="line">
+														<h6 class="line-title heading-sm">
+															Lorem.
+														</h6>
+														<p>
+															Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum dui nec odio ullamcorper mattis. Nullam pellentesque orci nunc, a ornare dolor sagittis in. Maecenas fermentum eleifend erat, nec egestas neque rutrum euismod. Nam pulvinar felis metus, vitae hendrerit turpis efficitur non. Donec pretium quam quis arcu pharetra rhoncus. Etiam sem lorem, finibus eu sapien id, rutrum pharetra orci. Curabitur euismod quam eget nisl dapibus, id tristique velit mollis. Integer ac velit mi.
+														</p>
+													</div>
+
+
+												</div>
+											</details>
+											<details class="deliverables-spollers__item">
+												<summary class="deliverables-spollers__title" data-ripple>
+													<div class="deliverables-spollers__title-wrap">
+														<div>
+															<p>
+																Our link in the pinned comments
+															</p>
+														</div>
+													</div>
+												</summary>
+												<div class="deliverables-spollers__body spollers__body">
+													<div class="line">
+														<h6 class="line-title heading-sm">
+															Lorem.
+														</h6>
+														<p>
+															Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum dui nec odio ullamcorper mattis. Nullam pellentesque orci nunc, a ornare dolor sagittis in. Maecenas fermentum eleifend erat, nec egestas neque rutrum euismod. Nam pulvinar felis metus, vitae hendrerit turpis efficitur non. Donec pretium quam quis arcu pharetra rhoncus. Etiam sem lorem, finibus eu sapien id, rutrum pharetra orci. Curabitur euismod quam eget nisl dapibus, id tristique velit mollis. Integer ac velit mi.
+														</p>
+													</div>
+
+
+												</div>
+											</details>
+										</div>
+									</div>
+								</div>
+								<div class="popup__line">
+									<div class="popup-campaign__about background-tertirary p-4 rounded-2xl">
+										<h5 class="sm:heading-lg heading-md mb-2">
+											About us
+										</h5>
+										<div data-showmore class="popup-showmore">
+											<div data-showmore-content="100" class="popup-showmore__content">
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum dui nec odio ullamcorper mattis. Nullam pellentesque orci nunc, a ornare dolor sagittis in. Maecenas fermentum eleifend erat, nec egestas neque rutrum euismod. Nam pulvinar felis metus, vitae hendrerit turpis efficitur non. Donec pretium quam quis arcu pharetra rhoncus. Etiam sem lorem, finibus eu sapien id, rutrum pharetra orci. Curabitur euismod quam eget nisl dapibus, id tristique velit mollis. Integer ac velit mi.
+												</p>
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum dui nec odio ullamcorper mattis. Nullam pellentesque orci nunc, a ornare dolor sagittis in. Maecenas fermentum eleifend erat, nec egestas neque rutrum euismod. Nam pulvinar felis metus, vitae hendrerit turpis efficitur non. Donec pretium quam quis arcu pharetra rhoncus. Etiam sem lorem, finibus eu sapien id, rutrum pharetra orci. Curabitur euismod quam eget nisl dapibus, id tristique velit mollis. Integer ac velit mi.
+												</p>
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum dui nec odio ullamcorper mattis. Nullam pellentesque orci nunc, a ornare dolor sagittis in. Maecenas fermentum eleifend erat, nec egestas neque rutrum euismod. Nam pulvinar felis metus, vitae hendrerit turpis efficitur non. Donec pretium quam quis arcu pharetra rhoncus. Etiam sem lorem, finibus eu sapien id, rutrum pharetra orci. Curabitur euismod quam eget nisl dapibus, id tristique velit mollis. Integer ac velit mi.
+												</p>
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum dui nec odio ullamcorper mattis. Nullam pellentesque orci nunc, a ornare dolor sagittis in. Maecenas fermentum eleifend erat, nec egestas neque rutrum euismod. Nam pulvinar felis metus, vitae hendrerit turpis efficitur non. Donec pretium quam quis arcu pharetra rhoncus. Etiam sem lorem, finibus eu sapien id, rutrum pharetra orci. Curabitur euismod quam eget nisl dapibus, id tristique velit mollis. Integer ac velit mi.
+												</p>
+											</div>
+											<button data-showmore-button type="button" class="popup-showmore__more"><span>See more</span><span>Hide</span></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="popup__footer mt-5 flex items-center gap-4 md:flex-nowrap flex-wrap justify-between">
+						<div class="popup__footer-left flex items-center gap-4 sm:flex-nowrap flex-wrap">
+							<p class="text-body-md-medium text-secondary whitespace-nowrap">
+								Oct 13, 2023
+							</p>
+							<div class="card-tags card-tags--m flex-wrap" data-tags="6">
+								<span class="card-tag">
+									Movie
+								</span>
+								<span class="card-tag">
+									Movie
+								</span>
+								<span class="card-tag">
+									Movie
+								</span>
+								<span class="card-tag">
+									Movie
+								</span>
+								<span class="card-tag">
+									Movie
+								</span>
+								<span class="card-tag">
+									Movie
+								</span>
+								<span class="card-tag">
+									Movie
+								</span>
+								<span class="card-tag">
+									Movie
+								</span>
+								<span class="card-tag">
+									Movie
+								</span>
+								<span class="card-tag">
+									Movie
+								</span>
+								<span class="card-tag">
+									Movie
+								</span>
+								<button class="card-tag card-tag-btn--more !hidden" data-ripple="">
+									<span class="button__text hidden-count"></span>
+								</button>
+							</div>
+						</div>
+						<div class="popup__footer-apply">
+							<a href="#" class="button button-large button-primary" data-ripple="">
+								<div class="button__text">
+									Apply
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="popupCreatorsProfile" aria-hidden="true" class="popup popup-creators-profile popup-xl">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__header mb-5 flex items-center gap-5 sm:pr-4 lg:flex-nowrap flex-wrap justify-between">
+						<div class="popup-creators-profile__head flex sm:items-center gap-5 sm:flex-row flex-col">
+							<div class="profile profile-size--l">
+								<div class="profile__body">
+									<div class="profile__icon">
+										<img src="img/profile-avatars/image.png" alt="image">
+									</div>
+									<div class="profile__info">
+										<div class="profile__name">
+											Thetremba
+											<div class="level-badge">
+												<div class="svg-icon">
+													<img class="icon icon--size-m" src="img/levels-badge/level-10.svg" alt="Level">
+
+												</div>
+											</div>
+										</div>
+										<div class="profile__date">
+											Joined Oct 23, 2023
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="popup-creators-profile__info info flex gap-3 flex-wrap">
+								<div class="info__line text-color-yellow">
+									<div class="info__text">
+										<div class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="16" viewBox="0 0 16 16" fill="none">
+												<path d="M6.102 3.60531C6.94667 2.09065 7.36867 1.33331 8 1.33331C8.63133 1.33331 9.05333 2.09065 9.898 3.60531L10.1167 3.99731C10.3567 4.42798 10.4767 4.64331 10.6633 4.78531C10.85 4.92731 11.0833 4.97998 11.55 5.08531L11.974 5.18131C13.614 5.55265 14.4333 5.73798 14.6287 6.36531C14.8233 6.99198 14.2647 7.64598 13.1467 8.95331L12.8573 9.29131C12.54 9.66265 12.3807 9.84865 12.3093 10.078C12.238 10.308 12.262 10.556 12.31 11.0513L12.354 11.5026C12.5227 13.2473 12.6073 14.1193 12.0967 14.5066C11.586 14.8946 10.818 14.5406 9.28333 13.834L8.88533 13.6513C8.44933 13.45 8.23133 13.35 8 13.35C7.76867 13.35 7.55067 13.45 7.114 13.6513L6.71733 13.834C5.182 14.5406 4.414 14.894 3.904 14.5073C3.39267 14.1193 3.47733 13.2473 3.646 11.5026L3.69 11.052C3.738 10.556 3.762 10.308 3.69 10.0786C3.61933 9.84865 3.46 9.66265 3.14267 9.29198L2.85333 8.95331C1.73533 7.64665 1.17667 6.99265 1.37133 6.36531C1.56667 5.73798 2.38667 5.55198 4.02667 5.18131L4.45067 5.08531C4.91667 4.97998 5.14933 4.92731 5.33667 4.78531C5.52333 4.64331 5.64333 4.42798 5.88333 3.99731L6.102 3.60531Z" fill="#FFB33A"></path>
+											</svg>
+										</div>
+										<p>
+											Reviews
+										</p>
+									</div>
+									<div class="info__score heading-sm">
+										4,8
+									</div>
+								</div>
+								<div class="info__line text-color-green">
+									<div class="info__text">
+										<div class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="16" viewBox="0 0 16 16" fill="none">
+												<path opacity="0.4" d="M8 14.6667C4.85733 14.6667 3.286 14.6667 2.30933 13.69C1.33333 12.7147 1.33333 11.1427 1.33333 8.00004C1.33333 4.85737 1.33333 3.28604 2.30933 2.30937C3.28666 1.33337 4.85733 1.33337 8 1.33337C11.1427 1.33337 12.714 1.33337 13.69 2.30937C14.6667 3.28671 14.6667 4.85737 14.6667 8.00004C14.6667 11.1427 14.6667 12.714 13.69 13.69C12.7147 14.6667 11.1427 14.6667 8 14.6667Z" fill="#01FDAA"></path>
+												<path d="M11.794 5.20251C11.9259 5.33234 12 5.50834 12 5.69184C12 5.87534 11.9259 6.05133 11.794 6.18117L7.09809 10.7975C6.96602 10.9272 6.78698 11 6.60032 11C6.41366 11 6.23463 10.9272 6.10256 10.7975L4.22419 8.95096C4.15498 8.88757 4.09948 8.81112 4.06098 8.72618C4.02248 8.64124 4.00178 8.54955 4.00011 8.45657C3.99844 8.3636 4.01584 8.27125 4.05127 8.18502C4.08669 8.0988 4.13942 8.02048 4.20631 7.95473C4.2732 7.88897 4.35287 7.83713 4.44058 7.80231C4.52829 7.76748 4.62223 7.75038 4.71681 7.75202C4.81139 7.75366 4.90466 7.77401 4.99107 7.81186C5.07747 7.8497 5.15524 7.90427 5.21972 7.9723L6.60032 9.3295L10.7985 5.20251C10.9305 5.07284 11.1096 5 11.2962 5C11.4829 5 11.6619 5.07284 11.794 5.20251Z" fill="#01FDAA"></path>
+											</svg>
+										</div>
+										<p>
+											Success
+										</p>
+									</div>
+									<div class="info__score heading-sm">
+										99%
+									</div>
+								</div>
+								<div class="info__line text-color-purple">
+									<div class="info__text">
+										<div class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="17" viewBox="0 0 16 17" fill="none">
+												<path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M14.6668 8.49992C14.6668 12.1819 11.6822 15.1666 8.00016 15.1666C4.31816 15.1666 1.3335 12.1819 1.3335 8.49992C1.3335 4.81792 4.31816 1.83325 8.00016 1.83325C11.6822 1.83325 14.6668 4.81792 14.6668 8.49992Z" fill="#7D72CB" />
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M8 4C8.13261 4 8.25978 4.05268 8.35355 4.14645C8.44732 4.24021 8.5 4.36739 8.5 4.5V4.71133C9.58667 4.906 10.5 5.72267 10.5 6.83333C10.5 6.96594 10.4473 7.09312 10.3536 7.18689C10.2598 7.28065 10.1326 7.33333 10 7.33333C9.86739 7.33333 9.74022 7.28065 9.64645 7.18689C9.55268 7.09312 9.5 6.96594 9.5 6.83333C9.5 6.38133 9.124 5.902 8.5 5.73133V8.04467C9.58667 8.23933 10.5 9.056 10.5 10.1667C10.5 11.2773 9.58667 12.094 8.5 12.2887V12.5C8.5 12.6326 8.44732 12.7598 8.35355 12.8536C8.25978 12.9473 8.13261 13 8 13C7.86739 13 7.74022 12.9473 7.64645 12.8536C7.55268 12.7598 7.5 12.6326 7.5 12.5V12.2887C6.41333 12.094 5.5 11.2773 5.5 10.1667C5.5 10.0341 5.55268 9.90688 5.64645 9.81311C5.74022 9.71935 5.86739 9.66667 6 9.66667C6.13261 9.66667 6.25978 9.71935 6.35355 9.81311C6.44732 9.90688 6.5 10.0341 6.5 10.1667C6.5 10.6187 6.876 11.098 7.5 11.268V8.95533C6.41333 8.76067 5.5 7.944 5.5 6.83333C5.5 5.72267 6.41333 4.906 7.5 4.71133V4.5C7.5 4.36739 7.55268 4.24021 7.64645 4.14645C7.74022 4.05268 7.86739 4 8 4ZM7.5 5.73133C6.876 5.902 6.5 6.38133 6.5 6.83333C6.5 7.28533 6.876 7.76467 7.5 7.93467V5.73133ZM9.5 10.1667C9.5 9.71467 9.124 9.23533 8.5 9.06533V11.268C9.124 11.098 9.5 10.6187 9.5 10.1667Z" fill="#7D72CB" />
+											</svg>
+										</div>
+										<p>
+											CPM
+										</p>
+									</div>
+									<div class="info__score heading-sm">
+										2,8
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="button button-large button-primary" data-ripple="">
+							<span class="button__text">
+								Invite
+							</span>
+						</a>
+					</div>
+					<button data-close type="button" class="popup__close">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<g id="close">
+								<path id="Vector" d="M7 7L17 17M7 17L17 7" stroke="white" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+							</g>
+						</svg>
+					</button>
+					<div class="popup__body sm:mx-0 -mx-2">
+						<div class="popup__inner background-secondary sm:p-6 p-4 sm:rounded-3xl rounded-2xl" data-simplebar>
+							<div class="popup__row">
+								<div class="popup__line relative">
+									<div class="popup-creators-profile__property property">
+										<div class="property__line">
+											<p class="property__caption">
+												Language
+											</p>
+											<div class="line">
+
+											</div>
+											<div class="property__desc">
+												<img src="img/flags/flag.png" class="flag" alt="01">
+												English
+											</div>
+										</div>
+										<div class="property__line">
+											<p class="property__caption">
+												Country
+											</p>
+											<div class="line">
+
+											</div>
+											<div class="property__desc">
+												<img src="img/flags/flag.png" class="flag" alt="01">
+												USA
+											</div>
+										</div>
+										<div class="property__line">
+											<p class="property__caption">
+												Age
+											</p>
+											<div class="line">
+
+											</div>
+											<div class="property__desc">
+												26
+											</div>
+										</div>
+										<div class="property__line">
+											<p class="property__caption">
+												Gender
+											</p>
+											<div class="line">
+
+											</div>
+											<div class="property__desc">
+												Male
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="popup__row flex lg:flex-row flex-col gap-5">
+								<div class="popup__line basis-5/6">
+									<div class="popup-campaign__about background-tertirary p-4 rounded-2xl">
+										<h5 class="sm:heading-lg heading-md mb-2">
+											About us
+										</h5>
+										<div data-showmore class="popup-showmore">
+											<div data-showmore-content="90" class="popup-showmore__content">
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum dui nec odio ullamcorper mattis. Nullam pellentesque orci nunc, a ornare dolor sagittis in. Maecenas fermentum eleifend erat, nec egestas neque rutrum euismod. Nam pulvinar felis metus, vitae hendrerit turpis efficitur non. Donec pretium quam quis arcu pharetra rhoncus. Etiam sem lorem, finibus eu sapien id, rutrum pharetra orci. Curabitur euismod quam eget nisl dapibus, id tristique velit mollis. Integer ac velit mi.
+												</p>
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum dui nec odio ullamcorper mattis. Nullam pellentesque orci nunc, a ornare dolor sagittis in. Maecenas fermentum eleifend erat, nec egestas neque rutrum euismod. Nam pulvinar felis metus, vitae hendrerit turpis efficitur non. Donec pretium quam quis arcu pharetra rhoncus. Etiam sem lorem, finibus eu sapien id, rutrum pharetra orci. Curabitur euismod quam eget nisl dapibus, id tristique velit mollis. Integer ac velit mi.
+												</p>
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum dui nec odio ullamcorper mattis. Nullam pellentesque orci nunc, a ornare dolor sagittis in. Maecenas fermentum eleifend erat, nec egestas neque rutrum euismod. Nam pulvinar felis metus, vitae hendrerit turpis efficitur non. Donec pretium quam quis arcu pharetra rhoncus. Etiam sem lorem, finibus eu sapien id, rutrum pharetra orci. Curabitur euismod quam eget nisl dapibus, id tristique velit mollis. Integer ac velit mi.
+												</p>
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum dui nec odio ullamcorper mattis. Nullam pellentesque orci nunc, a ornare dolor sagittis in. Maecenas fermentum eleifend erat, nec egestas neque rutrum euismod. Nam pulvinar felis metus, vitae hendrerit turpis efficitur non. Donec pretium quam quis arcu pharetra rhoncus. Etiam sem lorem, finibus eu sapien id, rutrum pharetra orci. Curabitur euismod quam eget nisl dapibus, id tristique velit mollis. Integer ac velit mi.
+												</p>
+											</div>
+											<button data-showmore-button type="button" class="popup-showmore__more"><span>See more</span><span>Hide</span></button>
+										</div>
+									</div>
+								</div>
+								<div class="popup__line basis-full">
+									<div class="info-block info-block-socials creator__info-socials background-tertirary">
+										<div class="info-block__header">
+											<h5 class="md:heading-lg heading-md mb-2">
+												Social
+											</h5>
+										</div>
+										<div class="info-block__body">
+											<div class="info-block-socials__counter counter">
+												<div class="counter__body">
+													<div class="counter__icon">
+														<div class="svg-icon">
+															<svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-m" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																<g id="twitch">
+																	<path id="Vector" d="M11.64 5.93H13.07V10.21H11.64M15.57 5.93H17V10.21H15.57M6.99999 2L3.42999 5.57V18.43H7.70999V22L11.29 18.43H14.14L20.57 12V2M19.14 11.29L16.29 14.14H13.43L10.93 16.64V14.14H7.70999V3.43H19.14V11.29Z" fill="white"></path>
+																</g>
+															</svg>
+														</div>
+													</div>
+													<div class="counter__info">
+														<p class="heading-lg text-color-green text-center">
+															128K
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="info-block-socials__counter counter">
+												<div class="counter__body">
+													<div class="counter__icon">
+														<div class="svg-icon">
+															<svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-m" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																<g id="youtube">
+																	<path id="Vector" d="M12 4C2.17143 4 2 4.90182 2 12C2 19.0982 2.17143 20 12 20C21.8286 20 22 19.0982 22 12C22 4.90182 21.8286 4 12 4ZM15.2 12.3491L10.7143 14.5309C10.3143 14.72 10 14.5018 10 14.0509V9.94909C10 9.49818 10.3286 9.28 10.7143 9.46909L15.2 11.6509C15.6 11.84 15.6 12.16 15.2 12.3491Z" fill="white"></path>
+																</g>
+															</svg>
+														</div>
+													</div>
+													<div class="counter__info">
+														<p class="heading-lg text-color-green text-center">
+															128K
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="info-block-socials__counter counter counter-not-connect">
+												<div class="counter__body">
+													<div class="counter__icon">
+														<div class="svg-icon">
+															<svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-m" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																<g id="tiktok">
+																	<path id="Vector" d="M16.6 5.82C15.9164 5.03962 15.5397 4.03743 15.54 3H12.45V15.4C12.4261 16.071 12.1428 16.7066 11.6597 17.1729C11.1766 17.6393 10.5314 17.8999 9.85997 17.9C8.43997 17.9 7.25997 16.74 7.25997 15.3C7.25997 13.58 8.91997 12.29 10.63 12.82V9.66C7.17997 9.2 4.15997 11.88 4.15997 15.3C4.15997 18.63 6.91997 21 9.84997 21C12.99 21 15.54 18.45 15.54 15.3V9.01C16.793 9.90985 18.2973 10.3926 19.84 10.39V7.3C19.84 7.3 17.96 7.39 16.6 5.82Z" fill="white"></path>
+																</g>
+															</svg>
+														</div>
+													</div>
+													<div class="counter__info">
+														<div class="text-body-sm-regular">
+
+															<p>
+																Not <br>
+																Connected
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="info-block-socials__counter counter counter-not-connect">
+												<div class="counter__body">
+													<div class="counter__icon">
+														<div class="svg-icon">
+															<svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-m" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																<g id="instagram">
+																	<path id="Vector" d="M12 8.87579C10.2797 8.87579 8.87577 10.2797 8.87577 12C8.87577 13.7203 10.2797 15.1242 12 15.1242C13.7203 15.1242 15.1242 13.7203 15.1242 12C15.1242 10.2797 13.7203 8.87579 12 8.87579ZM21.3703 12C21.3703 10.7063 21.382 9.42423 21.3094 8.13283C21.2367 6.63283 20.8945 5.30158 19.7976 4.2047C18.6984 3.10548 17.3695 2.76564 15.8695 2.69298C14.5758 2.62033 13.2937 2.63204 12.0023 2.63204C10.7086 2.63204 9.42655 2.62033 8.13515 2.69298C6.63515 2.76564 5.3039 3.10783 4.20702 4.2047C3.1078 5.30392 2.76796 6.63283 2.6953 8.13283C2.62265 9.42658 2.63436 10.7086 2.63436 12C2.63436 13.2914 2.62265 14.5758 2.6953 15.8672C2.76796 17.3672 3.11015 18.6985 4.20702 19.7953C5.30624 20.8945 6.63515 21.2344 8.13515 21.307C9.4289 21.3797 10.7109 21.368 12.0023 21.368C13.2961 21.368 14.5781 21.3797 15.8695 21.307C17.3695 21.2344 18.7008 20.8922 19.7976 19.7953C20.8969 18.6961 21.2367 17.3672 21.3094 15.8672C21.3844 14.5758 21.3703 13.2938 21.3703 12ZM12 16.807C9.33983 16.807 7.19296 14.6602 7.19296 12C7.19296 9.33986 9.33983 7.19298 12 7.19298C14.6601 7.19298 16.807 9.33986 16.807 12C16.807 14.6602 14.6601 16.807 12 16.807ZM17.0039 8.11876C16.3828 8.11876 15.8812 7.6172 15.8812 6.99611C15.8812 6.37501 16.3828 5.87345 17.0039 5.87345C17.625 5.87345 18.1266 6.37501 18.1266 6.99611C18.1267 7.14359 18.0978 7.28966 18.0415 7.42595C17.9851 7.56224 17.9024 7.68607 17.7981 7.79036C17.6939 7.89464 17.57 7.97733 17.4337 8.03368C17.2974 8.09004 17.1514 8.11895 17.0039 8.11876Z" fill="white"></path>
+																</g>
+															</svg>
+														</div>
+													</div>
+													<div class="counter__info">
+														<div class="text-body-sm-regular">
+
+															<p>
+																Not <br>
+																Connected
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="popup__row">
+								<div class="card-tags card-tags--m flex-wrap" data-tags="6">
+									<span class="card-tag">
+										Movie
+									</span>
+									<span class="card-tag">
+										Movie
+									</span>
+									<span class="card-tag">
+										Movie
+									</span>
+									<span class="card-tag">
+										Movie
+									</span>
+									<span class="card-tag">
+										Movie
+									</span>
+									<span class="card-tag">
+										Movie
+									</span>
+									<span class="card-tag">
+										Movie
+									</span>
+									<span class="card-tag">
+										Movie
+									</span>
+									<span class="card-tag">
+										Movie
+									</span>
+									<span class="card-tag">
+										Movie
+									</span>
+									<span class="card-tag">
+										Movie
+									</span>
+									<button class="card-tag card-tag-btn--more !hidden" data-ripple="">
+										<span class="button__text hidden-count"></span>
+									</button>
+								</div>
+							</div>
+							<div class="popup__row grid lg:grid-cols-2 gap-5">
+								<div class="popup__line">
+									<div class="popup-creators-profile__audience audience">
+										<h5 class="heading-lg mb-4">
+											Past projects
+										</h5>
+										<div class="audience__chart p-4 background-tertirary rounded-2xl">
+											<div data-tabs class="audience-tabs tabs-one">
+												<nav data-tabs-titles class="tabs__navigation mb-5">
+													<button type="button" class="tabs__title _tab-active">Ages</button>
+													<button type="button" class="tabs__title">Countries</button>
+													<button type="button" class="tabs__title">Genders</button>
+												</nav>
+												<div data-tabs-body class="tabs__content">
+													<div class="tabs__body">
+														<div class="chart-list">
+															<div class="chart">
+																<p class="text-body-md-medium">
+																	13-17
+																</p>
+																<div class="chart-bar">
+																	<div class="bar" style="width: 4%;">
+
+																	</div>
+																</div>
+																<p class="heading-sm">
+																	4%
+																</p>
+															</div>
+															<div class="chart">
+																<p class="text-body-md-medium">
+																	18-24
+																</p>
+																<div class="chart-bar">
+																	<div class="bar" style="width: 28%;">
+
+																	</div>
+																</div>
+																<p class="heading-sm">
+																	28%
+																</p>
+															</div>
+															<div class="chart">
+																<p class="text-body-md-medium">
+																	25-34
+																</p>
+																<div class="chart-bar">
+																	<div class="bar" style="width: 48%;">
+
+																	</div>
+																</div>
+																<p class="heading-sm">
+																	48%
+																</p>
+															</div>
+															<div class="chart">
+																<p class="text-body-md-medium">
+																	35+
+																</p>
+																<div class="chart-bar">
+																	<div class="bar" style="width: 19%;">
+
+																	</div>
+																</div>
+																<p class="heading-sm">
+																	19%
+																</p>
+															</div>
+															<div class="chart">
+																<p class="text-body-md-medium">
+																	35+
+																</p>
+																<div class="chart-bar chart-bar--full">
+																	<div class="bar" style="width: 100%;">
+
+																	</div>
+																</div>
+																<p class="heading-sm">
+																	100%
+																</p>
+															</div>
+														</div>
+													</div>
+													<div class="tabs__body">
+														Tab 2
+													</div>
+													<div class="tabs__body">
+														Tab 3
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="popup__line">
+									<div class="popup-creators-profile__projects">
+										<h5 class="heading-lg mb-4">
+											Past projects
+										</h5>
+										<div class="creator__projects-list">
+											<a href="#" class="campaign-item campaign-item--active" data-ripple="">
+												<div class="campaign-item__body">
+													<div class="campaign-item__left">
+														<div class="profile profile-size--s">
+															<div class="profile__body">
+																<div class="profile__icon">
+																	<img src="img/profile-avatars/logo.png" alt="image">
+																</div>
+																<div class="profile__info">
+																	<div class="profile__name">
+																		Campaign Name
+																	</div>
+																</div>
+															</div>
+
+														</div>
+													</div>
+													<div class="campaign-item__right">
+														<div class="tags tags--project">
+															<div class="tag tag--active">
+																<div class="svg-icon">
+																	<svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+																		<path opacity="0.3" d="M6.5 11C9.2615 11 11.5 8.7615 11.5 6C11.5 3.2385 9.2615 1 6.5 1C3.7385 1 1.5 3.2385 1.5 6C1.5 8.7615 3.7385 11 6.5 11Z" fill="#101010"></path>
+																		<path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 3.625C6.59946 3.625 6.69484 3.66451 6.76516 3.73483C6.83549 3.80516 6.875 3.90054 6.875 4V5.845L8.015 6.985C8.05184 7.01933 8.08139 7.06073 8.10189 7.10673C8.12239 7.15273 8.13341 7.20239 8.1343 7.25274C8.13518 7.30309 8.12592 7.3531 8.10706 7.3998C8.0882 7.44649 8.06013 7.48891 8.02452 7.52452C7.98891 7.56013 7.94649 7.5882 7.8998 7.60706C7.8531 7.62592 7.80309 7.63518 7.75274 7.6343C7.70239 7.63341 7.65273 7.62239 7.60673 7.60189C7.56073 7.58139 7.51933 7.55184 7.485 7.515L6.235 6.265C6.16465 6.19474 6.12509 6.09942 6.125 6V4C6.125 3.90054 6.16451 3.80516 6.23484 3.73483C6.30516 3.66451 6.40054 3.625 6.5 3.625Z" fill="#101010"></path>
+																	</svg>
+																</div>
+																Active
+															</div>
+														</div>
+
+														<div class="campaign-item__platform">
+															<div class="svg-icon">
+																<svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-sm" width="20" height="20" viewBox="0 0 20 20" fill="none">
+																	<path d="M10 3.33337C1.80953 3.33337 1.66667 4.08489 1.66667 10C1.66667 15.9152 1.80953 16.6667 10 16.6667C18.1905 16.6667 18.3333 15.9152 18.3333 10C18.3333 4.08489 18.1905 3.33337 10 3.33337ZM12.6667 10.2909L8.92858 12.1091C8.59524 12.2667 8.33334 12.0849 8.33334 11.7091V8.29095C8.33334 7.91519 8.60715 7.73337 8.92858 7.89095L12.6667 9.70913C13 9.86671 13 10.1334 12.6667 10.2909Z" fill="white"></path>
+																</svg>
+															</div>
+														</div>
+													</div>
+												</div>
+											</a>
+											<a href="#" class="campaign-item campaign-item--active" data-ripple="">
+												<div class="campaign-item__body">
+													<div class="campaign-item__left">
+														<div class="profile profile-size--s">
+															<div class="profile__body">
+																<div class="profile__icon">
+																	<img src="img/profile-avatars/logo.png" alt="image">
+																</div>
+																<div class="profile__info">
+																	<div class="profile__name">
+																		Campaign Name
+																	</div>
+																</div>
+															</div>
+
+														</div>
+													</div>
+													<div class="campaign-item__right">
+														<div class="tags tags--project">
+															<div class="tag tag--active">
+																<div class="svg-icon">
+																	<svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+																		<path opacity="0.3" d="M6.5 11C9.2615 11 11.5 8.7615 11.5 6C11.5 3.2385 9.2615 1 6.5 1C3.7385 1 1.5 3.2385 1.5 6C1.5 8.7615 3.7385 11 6.5 11Z" fill="#101010"></path>
+																		<path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 3.625C6.59946 3.625 6.69484 3.66451 6.76516 3.73483C6.83549 3.80516 6.875 3.90054 6.875 4V5.845L8.015 6.985C8.05184 7.01933 8.08139 7.06073 8.10189 7.10673C8.12239 7.15273 8.13341 7.20239 8.1343 7.25274C8.13518 7.30309 8.12592 7.3531 8.10706 7.3998C8.0882 7.44649 8.06013 7.48891 8.02452 7.52452C7.98891 7.56013 7.94649 7.5882 7.8998 7.60706C7.8531 7.62592 7.80309 7.63518 7.75274 7.6343C7.70239 7.63341 7.65273 7.62239 7.60673 7.60189C7.56073 7.58139 7.51933 7.55184 7.485 7.515L6.235 6.265C6.16465 6.19474 6.12509 6.09942 6.125 6V4C6.125 3.90054 6.16451 3.80516 6.23484 3.73483C6.30516 3.66451 6.40054 3.625 6.5 3.625Z" fill="#101010"></path>
+																	</svg>
+																</div>
+																Active
+															</div>
+														</div>
+
+														<div class="campaign-item__platform">
+															<div class="svg-icon">
+																<svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-sm" width="20" height="20" viewBox="0 0 20 20" fill="none">
+																	<path d="M10 3.33337C1.80953 3.33337 1.66667 4.08489 1.66667 10C1.66667 15.9152 1.80953 16.6667 10 16.6667C18.1905 16.6667 18.3333 15.9152 18.3333 10C18.3333 4.08489 18.1905 3.33337 10 3.33337ZM12.6667 10.2909L8.92858 12.1091C8.59524 12.2667 8.33334 12.0849 8.33334 11.7091V8.29095C8.33334 7.91519 8.60715 7.73337 8.92858 7.89095L12.6667 9.70913C13 9.86671 13 10.1334 12.6667 10.2909Z" fill="white"></path>
+																</svg>
+															</div>
+														</div>
+													</div>
+												</div>
+											</a>
+											<a href="#" class="campaign-item campaign-item--active" data-ripple="">
+												<div class="campaign-item__body">
+													<div class="campaign-item__left">
+														<div class="profile profile-size--s">
+															<div class="profile__body">
+																<div class="profile__icon">
+																	<img src="img/profile-avatars/logo.png" alt="image">
+																</div>
+																<div class="profile__info">
+																	<div class="profile__name">
+																		Campaign Name
+																	</div>
+																</div>
+															</div>
+
+														</div>
+													</div>
+													<div class="campaign-item__right">
+														<div class="tags tags--project">
+															<div class="tag tag--active">
+																<div class="svg-icon">
+																	<svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+																		<path opacity="0.3" d="M6.5 11C9.2615 11 11.5 8.7615 11.5 6C11.5 3.2385 9.2615 1 6.5 1C3.7385 1 1.5 3.2385 1.5 6C1.5 8.7615 3.7385 11 6.5 11Z" fill="#101010"></path>
+																		<path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 3.625C6.59946 3.625 6.69484 3.66451 6.76516 3.73483C6.83549 3.80516 6.875 3.90054 6.875 4V5.845L8.015 6.985C8.05184 7.01933 8.08139 7.06073 8.10189 7.10673C8.12239 7.15273 8.13341 7.20239 8.1343 7.25274C8.13518 7.30309 8.12592 7.3531 8.10706 7.3998C8.0882 7.44649 8.06013 7.48891 8.02452 7.52452C7.98891 7.56013 7.94649 7.5882 7.8998 7.60706C7.8531 7.62592 7.80309 7.63518 7.75274 7.6343C7.70239 7.63341 7.65273 7.62239 7.60673 7.60189C7.56073 7.58139 7.51933 7.55184 7.485 7.515L6.235 6.265C6.16465 6.19474 6.12509 6.09942 6.125 6V4C6.125 3.90054 6.16451 3.80516 6.23484 3.73483C6.30516 3.66451 6.40054 3.625 6.5 3.625Z" fill="#101010"></path>
+																	</svg>
+																</div>
+																Active
+															</div>
+														</div>
+
+														<div class="campaign-item__platform">
+															<div class="svg-icon">
+																<svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-sm" width="20" height="20" viewBox="0 0 20 20" fill="none">
+																	<path d="M10 3.33337C1.80953 3.33337 1.66667 4.08489 1.66667 10C1.66667 15.9152 1.80953 16.6667 10 16.6667C18.1905 16.6667 18.3333 15.9152 18.3333 10C18.3333 4.08489 18.1905 3.33337 10 3.33337ZM12.6667 10.2909L8.92858 12.1091C8.59524 12.2667 8.33334 12.0849 8.33334 11.7091V8.29095C8.33334 7.91519 8.60715 7.73337 8.92858 7.89095L12.6667 9.70913C13 9.86671 13 10.1334 12.6667 10.2909Z" fill="white"></path>
+																</svg>
+															</div>
+														</div>
+													</div>
+												</div>
+											</a>
+											<a href="#" class="campaign-item campaign-item--active" data-ripple="">
+												<div class="campaign-item__body">
+													<div class="campaign-item__left">
+														<div class="profile profile-size--s">
+															<div class="profile__body">
+																<div class="profile__icon">
+																	<img src="img/profile-avatars/logo.png" alt="image">
+																</div>
+																<div class="profile__info">
+																	<div class="profile__name">
+																		Campaign Name
+																	</div>
+																</div>
+															</div>
+
+														</div>
+													</div>
+													<div class="campaign-item__right">
+														<div class="tags tags--project">
+															<div class="tag tag--active">
+																<div class="svg-icon">
+																	<svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+																		<path opacity="0.3" d="M6.5 11C9.2615 11 11.5 8.7615 11.5 6C11.5 3.2385 9.2615 1 6.5 1C3.7385 1 1.5 3.2385 1.5 6C1.5 8.7615 3.7385 11 6.5 11Z" fill="#101010"></path>
+																		<path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 3.625C6.59946 3.625 6.69484 3.66451 6.76516 3.73483C6.83549 3.80516 6.875 3.90054 6.875 4V5.845L8.015 6.985C8.05184 7.01933 8.08139 7.06073 8.10189 7.10673C8.12239 7.15273 8.13341 7.20239 8.1343 7.25274C8.13518 7.30309 8.12592 7.3531 8.10706 7.3998C8.0882 7.44649 8.06013 7.48891 8.02452 7.52452C7.98891 7.56013 7.94649 7.5882 7.8998 7.60706C7.8531 7.62592 7.80309 7.63518 7.75274 7.6343C7.70239 7.63341 7.65273 7.62239 7.60673 7.60189C7.56073 7.58139 7.51933 7.55184 7.485 7.515L6.235 6.265C6.16465 6.19474 6.12509 6.09942 6.125 6V4C6.125 3.90054 6.16451 3.80516 6.23484 3.73483C6.30516 3.66451 6.40054 3.625 6.5 3.625Z" fill="#101010"></path>
+																	</svg>
+																</div>
+																Active
+															</div>
+														</div>
+
+														<div class="campaign-item__platform">
+															<div class="svg-icon">
+																<svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-sm" width="20" height="20" viewBox="0 0 20 20" fill="none">
+																	<path d="M10 3.33337C1.80953 3.33337 1.66667 4.08489 1.66667 10C1.66667 15.9152 1.80953 16.6667 10 16.6667C18.1905 16.6667 18.3333 15.9152 18.3333 10C18.3333 4.08489 18.1905 3.33337 10 3.33337ZM12.6667 10.2909L8.92858 12.1091C8.59524 12.2667 8.33334 12.0849 8.33334 11.7091V8.29095C8.33334 7.91519 8.60715 7.73337 8.92858 7.89095L12.6667 9.70913C13 9.86671 13 10.1334 12.6667 10.2909Z" fill="white"></path>
+																</svg>
+															</div>
+														</div>
+													</div>
+												</div>
+											</a>
+											<a href="#" class="campaign-item campaign-item--completed" data-ripple="">
+												<div class="campaign-item__body">
+													<div class="campaign-item__left">
+														<div class="profile profile-size--s">
+															<div class="profile__body">
+																<div class="profile__icon">
+																	<img src="img/profile-avatars/logo.png" alt="image">
+																</div>
+																<div class="profile__info">
+																	<div class="profile__name">
+																		Campaign Name Campaign Name
+																	</div>
+																</div>
+															</div>
+
+														</div>
+													</div>
+													<div class="campaign-item__right">
+														<div class="tags tags--project">
+															<div class="tag tag--completed">
+																<div class="svg-icon">
+																	<svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+																		<path opacity="0.3" d="M6.5 11C4.143 11 2.9645 11 2.232 10.2675C1.5 9.536 1.5 8.357 1.5 6C1.5 3.643 1.5 2.4645 2.232 1.732C2.965 1 4.143 1 6.5 1C8.857 1 10.0355 1 10.7675 1.732C11.5 2.465 11.5 3.643 11.5 6C11.5 8.357 11.5 9.5355 10.7675 10.2675C10.036 11 8.857 11 6.5 11Z" fill="#101010"></path>
+																		<path d="M9.3455 3.90188C9.44443 3.99926 9.5 4.13125 9.5 4.26888C9.5 4.4065 9.44443 4.5385 9.3455 4.63588L5.82357 8.09812C5.72451 8.19537 5.59024 8.25 5.45024 8.25C5.31024 8.25 5.17597 8.19537 5.07692 8.09812L3.66814 6.71322C3.61624 6.66568 3.57461 6.60834 3.54573 6.54464C3.51686 6.48093 3.50133 6.41216 3.50008 6.34243C3.49883 6.2727 3.51188 6.20343 3.53845 6.13877C3.56502 6.0741 3.60457 6.01536 3.65473 5.96604C3.7049 5.91673 3.76465 5.87785 3.83044 5.85173C3.89622 5.82561 3.96668 5.81278 4.03761 5.81401C4.10854 5.81524 4.1785 5.83051 4.2433 5.85889C4.3081 5.88728 4.36643 5.9282 4.41479 5.97923L5.45024 6.99713L8.59885 3.90188C8.6979 3.80463 8.83218 3.75 8.97217 3.75C9.11217 3.75 9.24645 3.80463 9.3455 3.90188Z" fill="#101010"></path>
+																	</svg>
+																</div>
+																Completed
+															</div>
+														</div>
+
+														<div class="campaign-item__platform">
+															<div class="svg-icon">
+																<svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-sm" width="20" height="20" viewBox="0 0 20 20" fill="none">
+																	<path d="M10 3.33337C1.80953 3.33337 1.66667 4.08489 1.66667 10C1.66667 15.9152 1.80953 16.6667 10 16.6667C18.1905 16.6667 18.3333 15.9152 18.3333 10C18.3333 4.08489 18.1905 3.33337 10 3.33337ZM12.6667 10.2909L8.92858 12.1091C8.59524 12.2667 8.33334 12.0849 8.33334 11.7091V8.29095C8.33334 7.91519 8.60715 7.73337 8.92858 7.89095L12.6667 9.70913C13 9.86671 13 10.1334 12.6667 10.2909Z" fill="white"></path>
+																</svg>
+															</div>
+														</div>
+													</div>
+												</div>
+											</a>
+											<a href="#" class="campaign-item campaign-item--cancelled" data-ripple="">
+												<div class="campaign-item__body">
+													<div class="campaign-item__left">
+														<div class="profile profile-size--s">
+															<div class="profile__body">
+																<div class="profile__icon">
+																	<img src="img/profile-avatars/logo.png" alt="image">
+																</div>
+																<div class="profile__info">
+																	<div class="profile__name">
+																		Campaign Name
+																	</div>
+																</div>
+															</div>
+
+														</div>
+													</div>
+													<div class="campaign-item__right">
+														<div class="tags tags--project">
+															<div class="tag tag--cancelled">
+																<div class="svg-icon">
+																	<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+																		<path opacity="0.3" d="M8.0785 1.901L8.4215 2.104C9.436 2.705 9.943 3.0055 10.2215 3.5C10.5 3.995 10.5 4.595 10.5 5.797V6.203C10.5 7.4045 10.5 8.0055 10.2215 8.5C9.943 8.995 9.436 9.295 8.4215 9.8955L8.0785 10.099C7.064 10.6995 6.557 11 6 11C5.443 11 4.936 10.7 3.9215 10.099L3.5785 9.8955C2.564 9.2955 2.057 8.9945 1.7785 8.5C1.5 8.005 1.5 7.405 1.5 6.203V5.797C1.5 4.595 1.5 3.9945 1.7785 3.5C2.057 3.005 2.564 2.705 3.5785 2.104L3.9215 1.901C4.936 1.3005 5.443 1 6 1C6.557 1 7.064 1.3 8.0785 1.901Z" fill="#101010"></path>
+																		<path d="M4.42096 3.86045L6 5.43942L7.57086 3.86863C7.60556 3.8317 7.64736 3.80215 7.69376 3.78177C7.74015 3.76138 7.79018 3.75058 7.84085 3.75C7.94935 3.75 8.0534 3.7931 8.13012 3.86981C8.20683 3.94653 8.24993 4.05057 8.24993 4.15906C8.25089 4.20921 8.24158 4.25903 8.22259 4.30546C8.2036 4.35188 8.17531 4.39394 8.13948 4.42904L6.54817 5.99984L8.13948 7.59109C8.2069 7.65705 8.24644 7.74636 8.24993 7.84062C8.24993 7.94911 8.20683 8.05315 8.13012 8.12987C8.0534 8.20658 7.94935 8.24968 7.84085 8.24968C7.78872 8.25184 7.7367 8.24314 7.68811 8.22412C7.63952 8.20511 7.59541 8.1762 7.55859 8.13923L6 6.56025L4.42505 8.13514C4.39048 8.17084 4.34919 8.19934 4.30355 8.219C4.25791 8.23866 4.20883 8.24908 4.15915 8.24968C4.05065 8.24968 3.9466 8.20658 3.86988 8.12987C3.79317 8.05315 3.75007 7.94911 3.75007 7.84062C3.74911 7.79046 3.75842 7.74065 3.77741 7.69422C3.7964 7.64779 3.82469 7.60574 3.86052 7.57063L5.45183 5.99984L3.86052 4.40859C3.7931 4.34263 3.75356 4.25331 3.75007 4.15906C3.75007 4.05057 3.79317 3.94653 3.86988 3.86981C3.9466 3.7931 4.05065 3.75 4.15915 3.75C4.25732 3.75123 4.35141 3.79091 4.42096 3.86045Z" fill="#101010"></path>
+																	</svg>
+																</div>
+																Cancelled
+															</div>
+														</div>
+
+														<div class="campaign-item__platform">
+															<div class="svg-icon">
+																<svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-sm" width="20" height="20" viewBox="0 0 20 20" fill="none">
+																	<path d="M10 3.33337C1.80953 3.33337 1.66667 4.08489 1.66667 10C1.66667 15.9152 1.80953 16.6667 10 16.6667C18.1905 16.6667 18.3333 15.9152 18.3333 10C18.3333 4.08489 18.1905 3.33337 10 3.33337ZM12.6667 10.2909L8.92858 12.1091C8.59524 12.2667 8.33334 12.0849 8.33334 11.7091V8.29095C8.33334 7.91519 8.60715 7.73337 8.92858 7.89095L12.6667 9.70913C13 9.86671 13 10.1334 12.6667 10.2909Z" fill="white"></path>
+																</svg>
+															</div>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__content">
+					<div class="footer__copyright">
+						© Symbiosa 2023
+					</div>
+					<div class="footer__menu menu">
+						<nav class="menu__body">
+							<ul>
+								<li>
+									<a href="#" data-popup="#popupTermsOfUse">
+										Terms of use
+									</a>
+								</li>
+								<li>
+									<a href="#" data-popup="#popupPrivacyPolicy">
+										Privacy Policy
+									</a>
+								</li>
+							</ul>
+
+						</nav>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js?_v=20231127035057"></script>
+	<script src="js/app.min.js?_v=20231127035057"></script>
+</body>
+
+</html>
