@@ -8231,52 +8231,57 @@
         const popupOfferFormCheck = () => {
             document.addEventListener("DOMContentLoaded", (function() {
                 const form = document.querySelector(".popup-offer-form");
-                const submitButton = document.querySelector('button[type="submit"]');
-                function checkFields() {
-                    let allRequiredFilled = true;
-                    form.querySelectorAll("[data-required]").forEach((field => {
-                        if (field.type === "checkbox") {
-                            if (!field.checked) allRequiredFilled = false;
-                        } else if (field.value.trim() === "") allRequiredFilled = false;
-                    }));
-                    return allRequiredFilled;
-                }
-                function updateSubmitButton() {
-                    submitButton.disabled = !checkFields();
-                }
-                form.addEventListener("input", updateSubmitButton);
-                updateSubmitButton();
-                const buttonResetInputs = () => {
-                    const inputLines = document.querySelectorAll(".input-line");
-                    inputLines.forEach((function(inputLine) {
-                        const resetButton = inputLine.querySelector(".button-reset");
-                        if (resetButton) resetButton.addEventListener("click", (function(e) {
-                            e.preventDefault();
-                            const inputField = inputLine.querySelector("input");
-                            if (inputField) {
-                                inputField.value = "";
-                                updateSubmitButton();
-                            }
+                if (form) {
+                    const submitButton = document.querySelector('button[type="submit"]');
+                    function checkFields() {
+                        let allRequiredFilled = true;
+                        form.querySelectorAll("[data-required]").forEach((field => {
+                            if (field.type === "checkbox") {
+                                if (!field.checked) allRequiredFilled = false;
+                            } else if (field.value.trim() === "") allRequiredFilled = false;
                         }));
-                    }));
-                };
-                buttonResetInputs();
+                        return allRequiredFilled;
+                    }
+                    function updateSubmitButton() {
+                        submitButton.disabled = !checkFields();
+                    }
+                    form.addEventListener("input", updateSubmitButton);
+                    updateSubmitButton();
+                    const buttonResetInputs = () => {
+                        const inputLines = document.querySelectorAll(".input-line");
+                        inputLines.forEach((function(inputLine) {
+                            const resetButton = inputLine.querySelector(".button-reset");
+                            if (resetButton) resetButton.addEventListener("click", (function(e) {
+                                e.preventDefault();
+                                const inputField = inputLine.querySelector("input");
+                                if (inputField) {
+                                    inputField.value = "";
+                                    updateSubmitButton();
+                                }
+                            }));
+                        }));
+                    };
+                    buttonResetInputs();
+                }
             }));
         };
-        const formatCurrency = amount => amount < 1e3 ? amount.toLocaleString("en-US", {
-            maximumFractionDigits: 0
-        }) : amount < 1e4 ? amount.toLocaleString("en-US", {
-            maximumFractionDigits: 0
-        }) : amount < 1e6 ? amount.toLocaleString("en-US", {
-            maximumFractionDigits: 0
-        }) : amount.toLocaleString("en-US", {
-            maximumFractionDigits: 0
-        });
-        document.getElementById("currency").addEventListener("input", (event => {
-            let inputValue = event.target.value;
-            let numericValue = inputValue.replace(/\D/g, "");
-            if (numericValue !== "") event.target.value = formatCurrency(parseInt(numericValue)); else event.target.value = "";
-        }));
+        const validationCurrencyInput = () => {
+            const formatCurrency = amount => amount < 1e3 ? amount.toLocaleString("en-US", {
+                maximumFractionDigits: 0
+            }) : amount < 1e4 ? amount.toLocaleString("en-US", {
+                maximumFractionDigits: 0
+            }) : amount < 1e6 ? amount.toLocaleString("en-US", {
+                maximumFractionDigits: 0
+            }) : amount.toLocaleString("en-US", {
+                maximumFractionDigits: 0
+            });
+            if (document.getElementById("currency")) document.getElementById("currency").addEventListener("input", (event => {
+                let inputValue = event.target.value;
+                let numericValue = inputValue.replace(/\D/g, "");
+                if (numericValue !== "") event.target.value = formatCurrency(parseInt(numericValue)); else event.target.value = "";
+            }));
+        };
+        validationCurrencyInput();
         cardTags();
         filters();
         customSelectCheckbox();
