@@ -574,25 +574,26 @@
                 }
                 function setSpollerAction(e) {
                     const el = e.target;
-                    if (el.closest("summary") && el.closest("[data-spollers]")) {
-                        if (el.closest("[data-spollers]").classList.contains("_spoller-init")) {
-                            const spollerTitle = el.closest("summary");
-                            const spollerBlock = spollerTitle.closest("details");
-                            const spollersBlock = spollerTitle.closest("[data-spollers]");
-                            const oneSpoller = spollersBlock.hasAttribute("data-one-spoller");
-                            const spollerSpeed = spollersBlock.dataset.spollersSpeed ? parseInt(spollersBlock.dataset.spollersSpeed) : 500;
-                            if (!spollersBlock.querySelectorAll("._slide").length) {
-                                if (oneSpoller && !spollerBlock.open) hideSpollersBody(spollersBlock);
-                                spollerTitle.classList.toggle("_spoller-active");
-                                _slideToggle(spollerTitle.nextElementSibling, spollerSpeed);
-                                !spollerBlock.open ? spollerBlock.open = true : setTimeout((() => {
-                                    spollerBlock.open = false;
-                                }), spollerSpeed);
-                            }
+                    const isCheckbox = el.type === "checkbox" || el.tagName === "LABEL" && el.querySelector('input[type="checkbox"]');
+                    const isCheckboxParent = el.closest("label") && el.closest("label").querySelector('input[type="checkbox"]');
+                    const isCheckboxClick = el.closest(".checkbox") || el.classList.contains("checkbox__label");
+                    if (el.closest("summary") && el.closest("[data-spollers]") && !isCheckbox && !isCheckboxParent && !isCheckboxClick) {
+                        const spollerTitle = el.closest("summary");
+                        const spollerBlock = spollerTitle.closest("details");
+                        const spollersBlock = spollerTitle.closest("[data-spollers]");
+                        const oneSpoller = spollersBlock.hasAttribute("data-one-spoller");
+                        const spollerSpeed = spollersBlock.dataset.spollersSpeed ? parseInt(spollersBlock.dataset.spollersSpeed) : 500;
+                        if (!spollersBlock.querySelectorAll("._slide").length) {
+                            if (oneSpoller && !spollerBlock.open) hideSpollersBody(spollersBlock);
+                            spollerTitle.classList.toggle("_spoller-active");
+                            _slideToggle(spollerTitle.nextElementSibling, spollerSpeed);
+                            !spollerBlock.open ? spollerBlock.open = true : setTimeout((() => {
+                                spollerBlock.open = false;
+                            }), spollerSpeed);
                         }
                         e.preventDefault();
                     }
-                    if (!el.closest("[data-spollers]")) {
+                    if (!el.closest("[data-spollers]") && !isCheckbox && !isCheckboxParent) {
                         const spollersClose = document.querySelectorAll("[data-spoller-close]");
                         if (spollersClose.length) spollersClose.forEach((spollerClose => {
                             const spollersBlock = spollerClose.closest("[data-spollers]");
@@ -963,7 +964,8 @@
                 document.addEventListener("click", function(e) {
                     const buttonOpen = e.target.closest(`[${this.options.attributeOpenButton}]`);
                     const isNoClickInsidePopup = e.target.closest(`[${this.options.attributeOpenButton}] .popup-no-click`);
-                    if (buttonOpen && !isNoClickInsidePopup) {
+                    const isFlatpickrCalendar = e.target.closest(".flatpickr-calendar");
+                    if (buttonOpen && !isNoClickInsidePopup && !isFlatpickrCalendar) {
                         e.preventDefault();
                         this._dataValue = buttonOpen.getAttribute(this.options.attributeOpenButton) ? buttonOpen.getAttribute(this.options.attributeOpenButton) : "error";
                         this.youTubeCode = buttonOpen.getAttribute(this.options.youtubeAttribute) ? buttonOpen.getAttribute(this.options.youtubeAttribute) : null;
@@ -977,7 +979,7 @@
                         return;
                     }
                     const buttonClose = e.target.closest(`[${this.options.attributeCloseButton}]`);
-                    if (buttonClose || !e.target.closest(`.${this.options.classes.popupContent}`) && this.isOpen) {
+                    if ((buttonClose || !e.target.closest(`.${this.options.classes.popupContent}`)) && this.isOpen && !isFlatpickrCalendar) {
                         e.preventDefault();
                         this.close();
                         return;
@@ -8057,8 +8059,10 @@
         da.init();
         const clickCreateRipple = () => {
             function createRipple(event) {
+                const target = event.currentTarget;
+                if (event.target.closest(".no-ripple")) return;
                 const ripple = document.createElement("span");
-                const rect = event.currentTarget.getBoundingClientRect();
+                const rect = target.getBoundingClientRect();
                 const size = Math.max(rect.width, rect.height);
                 const x = event.clientX - rect.left - size / 2;
                 const y = event.clientY - rect.top - size / 2;
@@ -8066,7 +8070,7 @@
                 ripple.style.left = `${x}px`;
                 ripple.style.top = `${y}px`;
                 ripple.className = "ripple";
-                event.currentTarget.appendChild(ripple);
+                target.appendChild(ripple);
                 ripple.addEventListener("animationend", (() => {
                     ripple.remove();
                 }));
@@ -8148,6 +8152,17 @@
                 }));
             }));
         };
+        const removeDividerTextPopup = () => {
+            document.addEventListener("DOMContentLoaded", (function() {
+                var popupContainers = document.querySelectorAll(".popup__text-inner");
+                popupContainers.forEach((function(popupContainer) {
+                    popupContainer.addEventListener("scroll", (function() {
+                        var popupText = popupContainer.closest(".popup__text");
+                        if (popupContainer.scrollTop + popupContainer.clientHeight === popupContainer.scrollHeight) popupText.classList.add("hide"); else popupText.classList.remove("hide");
+                    }));
+                }));
+            }));
+        };
         const customSelectCheckbox = () => {
             document.addEventListener("DOMContentLoaded", (() => {
                 const selects = document.querySelectorAll(".custom-select");
@@ -8172,11 +8187,113 @@
                 }));
             }));
         };
+        const checklistProjectPopupCount = () => {
+            document.addEventListener("DOMContentLoaded", (function() {
+                const deliverablesProject = document.querySelector(".checklist-project");
+                if (deliverablesProject) {
+                    const checklistRequired = deliverablesProject.querySelector(".checklist-required span");
+                    const checklistSelected = deliverablesProject.querySelector(".checklist-selected span");
+                    const updateChecklistCounts = () => {
+                        const requiredItems = deliverablesProject.querySelectorAll(".deliverables-project__item.item-required");
+                        const selectedItemsAll = deliverablesProject.querySelectorAll('.deliverables-project__item input[type="checkbox"]');
+                        const selectedItems = deliverablesProject.querySelectorAll('.deliverables-project__item input[type="checkbox"]:checked');
+                        if (checklistRequired) {
+                            checklistRequired.textContent = requiredItems.length;
+                            console.log(requiredItems);
+                        }
+                        if (checklistSelected) checklistSelected.textContent = `${selectedItems.length} / ${selectedItemsAll.length}`;
+                    };
+                    deliverablesProject.addEventListener("change", (event => {
+                        if (event.target.type === "checkbox") updateChecklistCounts();
+                    }));
+                    updateChecklistCounts();
+                }
+            }));
+        };
+        const onlyNumInputs = document.querySelectorAll(".only-num");
+        if (onlyNumInputs) onlyNumInputs.forEach((input => {
+            input.addEventListener("input", (function(event) {
+                const sanitizedValue = event.target.value.replace(/\D/g, "");
+                event.target.value = sanitizedValue;
+            }));
+        }));
+        const buttonResetInputs = () => {
+            const inputLines = document.querySelectorAll(".input-line");
+            inputLines.forEach((function(inputLine) {
+                const resetButton = inputLine.querySelector(".button-reset");
+                if (resetButton) resetButton.addEventListener("click", (function(e) {
+                    e.preventDefault();
+                    const inputField = inputLine.querySelector("input");
+                    if (inputField) inputField.value = "";
+                }));
+            }));
+        };
+        const popupOfferFormCheck = () => {
+            document.addEventListener("DOMContentLoaded", (function() {
+                const form = document.querySelector(".popup-offer-form");
+                const submitButton = document.querySelector('button[type="submit"]');
+                function checkFields() {
+                    let allRequiredFilled = true;
+                    form.querySelectorAll("[data-required]").forEach((field => {
+                        if (field.type === "checkbox") {
+                            if (!field.checked) allRequiredFilled = false;
+                        } else if (field.value.trim() === "") allRequiredFilled = false;
+                    }));
+                    return allRequiredFilled;
+                }
+                function updateSubmitButton() {
+                    submitButton.disabled = !checkFields();
+                }
+                form.addEventListener("input", updateSubmitButton);
+                updateSubmitButton();
+                const buttonResetInputs = () => {
+                    const inputLines = document.querySelectorAll(".input-line");
+                    inputLines.forEach((function(inputLine) {
+                        const resetButton = inputLine.querySelector(".button-reset");
+                        if (resetButton) resetButton.addEventListener("click", (function(e) {
+                            e.preventDefault();
+                            const inputField = inputLine.querySelector("input");
+                            if (inputField) {
+                                inputField.value = "";
+                                updateSubmitButton();
+                            }
+                        }));
+                    }));
+                };
+                buttonResetInputs();
+            }));
+        };
+        const formatCurrency = amount => amount < 1e3 ? amount.toLocaleString("en-US", {
+            maximumFractionDigits: 0
+        }) : amount < 1e4 ? amount.toLocaleString("en-US", {
+            maximumFractionDigits: 0
+        }) : amount < 1e6 ? amount.toLocaleString("en-US", {
+            maximumFractionDigits: 0
+        }) : amount.toLocaleString("en-US", {
+            maximumFractionDigits: 0
+        });
+        document.getElementById("currency").addEventListener("input", (event => {
+            let inputValue = event.target.value;
+            let numericValue = inputValue.replace(/\D/g, "");
+            if (numericValue !== "") event.target.value = formatCurrency(parseInt(numericValue)); else event.target.value = "";
+        }));
         cardTags();
         filters();
         customSelectCheckbox();
         copyReferral();
+        removeDividerTextPopup();
         clickCreateRipple();
+        checklistProjectPopupCount();
+        buttonResetInputs();
+        popupOfferFormCheck();
+        $(document).ready((function() {
+            jQuery(".date-input").flatpickr({
+                dateFormat: "Y-m-d H:i",
+                enableTime: true,
+                time_24hr: true,
+                minDate: "today"
+            });
+        }));
         window["FLS"] = false;
         isWebp();
         addLoadedClass();
