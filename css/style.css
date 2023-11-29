@@ -3989,7 +3989,6 @@ span.flatpickr-weekday {
 
 .flatpickr-time input.flatpickr-minute,
 .flatpickr-time input.flatpickr-second {
-  background-color: var(--grayscale-700);
   border-radius: 0 0 1rem 0;
 }
 
