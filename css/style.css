@@ -103,7 +103,7 @@
 }
 
 .text-yellow-300 {
-  color: var(--yellow-300);
+  color: var(--yellow-300) !important;
 }
 
 .text-accent-300 {
@@ -1045,7 +1045,7 @@ textarea.input {
   border-radius: 0.75rem;
   width: 100%;
   border: 1px solid var(--grayscale-700);
-  background-color: var(--backgroundsecondary);
+  background-color: var(--backgroundsecondary) !important;
   color: var(--textsecondary);
   letter-spacing: 0.25px;
   -webkit-transition: all 0.3s;
