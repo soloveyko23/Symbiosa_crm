@@ -3844,7 +3844,7 @@ body::after {
   display: none;
 }
 
-.flatpickr-calendar {
+.flatpickr-calendar.open {
   border-radius: 0.75rem;
   background-color: var(--grayscale-800);
   -webkit-box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.2);
