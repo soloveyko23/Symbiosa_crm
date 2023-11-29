@@ -10,11 +10,13 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20231128173115">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231129141405">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://cdn.tailwindcss.com?_v=20231128173115"></script>
+	<script src="https://cdn.tailwindcss.com?_v=20231129141405"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css?_v=20231129141405">
+	<link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/dark.css?_v=20231129141405">
 </head>
 
 <body>
@@ -453,7 +455,7 @@
 					</button>
 					<div class="popup__body">
 						<div class="popup__header">
-							<h5 class="title-h5">
+							<h5 class="heading-xl">
 								Terms of Use
 							</h5>
 						</div>
@@ -488,7 +490,7 @@
 					</button>
 					<div class="popup__body">
 						<div class="popup__header">
-							<h5 class="title-h5">
+							<h5 class="heading-xl">
 								Privacy Policy
 							</h5>
 						</div>
@@ -511,7 +513,7 @@
 			</div>
 		</div>
 
-		<div id="popupCampaign" aria-hidden="true" class="popup popup-campaign popup-xl">
+		<div id="popupCampaign" aria-hidden="true" class="popup popup-campaign popup-xxl">
 			<div class="popup__wrapper">
 				<div class="popup__content">
 					<div class="popup__header mb-5 flex items-center gap-4 pr-4 flex-wrap ">
@@ -519,7 +521,7 @@
 							<div class="brand-block block-container-bg">
 								<div class="flex items-center gap-2">
 									<div class="icon icon--size-m">
-										<img src="img/brands/netflix.png" alt="image">
+										<picture><source srcset="img/brands/netflix.webp" type="image/webp"><img src="img/brands/netflix.png" alt="image"></picture>
 									</div>
 									<div>
 										<p class="text-body-md-medium !leading-none">
@@ -565,19 +567,19 @@
 									<div class="popup-campaign__slider swiper">
 										<div class="popup-campaign__wrapper swiper-wrapper">
 											<div class="popup-campaign__slide swiper-slide slide">
-												<img src="img/cards/Thumbnail.jpg" alt="01">
+												<picture><source srcset="img/cards/Thumbnail.webp" type="image/webp"><img src="img/cards/Thumbnail.jpg" alt="01"></picture>
 											</div>
 											<div class="popup-campaign__slide swiper-slide slide">
-												<img src="img/cards/Thumbnail.jpg" alt="01">
+												<picture><source srcset="img/cards/Thumbnail.webp" type="image/webp"><img src="img/cards/Thumbnail.jpg" alt="01"></picture>
 											</div>
 											<div class="popup-campaign__slide swiper-slide slide">
-												<img src="img/cards/Thumbnail.jpg" alt="01">
+												<picture><source srcset="img/cards/Thumbnail.webp" type="image/webp"><img src="img/cards/Thumbnail.jpg" alt="01"></picture>
 											</div>
 											<div class="popup-campaign__slide swiper-slide slide">
-												<img src="img/cards/Thumbnail.jpg" alt="01">
+												<picture><source srcset="img/cards/Thumbnail.webp" type="image/webp"><img src="img/cards/Thumbnail.jpg" alt="01"></picture>
 											</div>
 											<div class="popup-campaign__slide swiper-slide slide">
-												<img src="img/cards/Thumbnail.jpg" alt="01">
+												<picture><source srcset="img/cards/Thumbnail.webp" type="image/webp"><img src="img/cards/Thumbnail.jpg" alt="01"></picture>
 											</div>
 										</div>
 										<button type="button" class="slider-button-one swiper-button-prev">
@@ -629,10 +631,10 @@
 												4
 											</span>
 										</h5>
-										<div data-spollers class="deliverables-spollers">
-											<details class="deliverables-spollers__item item-required">
-												<summary class="deliverables-spollers__title" data-ripple>
-													<div class="deliverables-spollers__title-wrap">
+										<div data-spollers class="deliverables-project">
+											<details class="deliverables-project__item item-required">
+												<summary class="deliverables-project__title" data-ripple>
+													<div class="deliverables-project__title-wrap">
 														<div>
 															<p>
 																1 Video (10 min or more)
@@ -643,7 +645,7 @@
 														</div>
 													</div>
 												</summary>
-												<div class="deliverables-spollers__body spollers__body">
+												<div class="deliverables-project__body spollers__body">
 													<div class="line">
 														<h6 class="line-title heading-sm">
 															Lorem.
@@ -656,9 +658,9 @@
 
 												</div>
 											</details>
-											<details class="deliverables-spollers__item item-required">
-												<summary class="deliverables-spollers__title" data-ripple>
-													<div class="deliverables-spollers__title-wrap">
+											<details class="deliverables-project__item item-required">
+												<summary class="deliverables-project__title" data-ripple>
+													<div class="deliverables-project__title-wrap">
 														<div>
 															<p>
 																1 Video (10 min or more) 1 Video (10 min or more) 1 Video (10 min or more)
@@ -669,7 +671,7 @@
 														</div>
 													</div>
 												</summary>
-												<div class="deliverables-spollers__body spollers__body">
+												<div class="deliverables-project__body spollers__body">
 													<div class="line">
 														<h6 class="line-title heading-sm">
 															Lorem.
@@ -682,9 +684,9 @@
 
 												</div>
 											</details>
-											<details class="deliverables-spollers__item">
-												<summary class="deliverables-spollers__title" data-ripple>
-													<div class="deliverables-spollers__title-wrap">
+											<details class="deliverables-project__item">
+												<summary class="deliverables-project__title" data-ripple>
+													<div class="deliverables-project__title-wrap">
 														<div>
 															<p>
 																1 Video (10 min or more) 1 Video (10 min or more) 1 Video (10 min or more)
@@ -692,7 +694,7 @@
 														</div>
 													</div>
 												</summary>
-												<div class="deliverables-spollers__body spollers__body">
+												<div class="deliverables-project__body spollers__body">
 													<div class="line">
 														<h6 class="line-title heading-sm">
 															Lorem.
@@ -705,9 +707,9 @@
 
 												</div>
 											</details>
-											<details class="deliverables-spollers__item">
-												<summary class="deliverables-spollers__title" data-ripple>
-													<div class="deliverables-spollers__title-wrap">
+											<details class="deliverables-project__item">
+												<summary class="deliverables-project__title" data-ripple>
+													<div class="deliverables-project__title-wrap">
 														<div>
 															<p>
 																Our link in the pinned comments
@@ -715,7 +717,7 @@
 														</div>
 													</div>
 												</summary>
-												<div class="deliverables-spollers__body spollers__body">
+												<div class="deliverables-project__body spollers__body">
 													<div class="line">
 														<h6 class="line-title heading-sm">
 															Lorem.
@@ -814,7 +816,7 @@
 			</div>
 		</div>
 
-		<div id="popupCreatorsProfile" aria-hidden="true" class="popup popup-creators-profile popup-xl">
+		<div id="popupCreatorsProfile" aria-hidden="true" class="popup popup-creators-profile popup-xxl">
 			<div class="popup__wrapper">
 				<div class="popup__content">
 					<div class="popup__header mb-5 flex items-center gap-5 sm:pr-6 lg:flex-nowrap flex-wrap justify-between">
@@ -822,14 +824,14 @@
 							<div class="profile profile-size--l">
 								<div class="profile__body">
 									<div class="profile__icon">
-										<img src="img/profile-avatars/image.png" alt="image">
+										<picture><source srcset="img/profile-avatars/image.webp" type="image/webp"><img src="img/profile-avatars/image.png" alt="image"></picture>
 									</div>
 									<div class="profile__info">
 										<div class="profile__name">
 											Thetremba
 											<div class="level-badge">
 												<div class="svg-icon">
-													<img class="icon icon--size-m" src="img/levels-badge/Level=1-1x.png" srcset="img/levels-badge/Level=1-2x.png 2x" alt="Level">
+													<picture><source srcset="img/levels-badge/Level=1-1x.webp, img/levels-badge/Level=1-2x.webp 2x" type="image/webp"><img class="icon icon--size-m" src="img/levels-badge/Level=1-1x.png" srcset="img/levels-badge/Level=1-2x.png 2x" alt="Level"></picture>
 												</div>
 											</div>
 										</div>
@@ -916,7 +918,7 @@
 
 											</div>
 											<div class="property__desc">
-												<img src="img/flags/flag.png" class="flag" alt="01">
+												<picture><source srcset="img/flags/flag.webp" type="image/webp"><img src="img/flags/flag.png" class="flag" alt="01"></picture>
 												English
 											</div>
 										</div>
@@ -928,7 +930,7 @@
 
 											</div>
 											<div class="property__desc">
-												<img src="img/flags/flag.png" class="flag" alt="01">
+												<picture><source srcset="img/flags/flag.webp" type="image/webp"><img src="img/flags/flag.png" class="flag" alt="01"></picture>
 												USA
 											</div>
 										</div>
@@ -1222,7 +1224,7 @@
 														<div class="profile profile-size--s">
 															<div class="profile__body">
 																<div class="profile__icon">
-																	<img src="img/profile-avatars/logo.png" alt="image">
+																	<picture><source srcset="img/profile-avatars/logo.webp" type="image/webp"><img src="img/profile-avatars/logo.png" alt="image"></picture>
 																</div>
 																<div class="profile__info">
 																	<div class="profile__name">
@@ -1262,7 +1264,7 @@
 														<div class="profile profile-size--s">
 															<div class="profile__body">
 																<div class="profile__icon">
-																	<img src="img/profile-avatars/logo.png" alt="image">
+																	<picture><source srcset="img/profile-avatars/logo.webp" type="image/webp"><img src="img/profile-avatars/logo.png" alt="image"></picture>
 																</div>
 																<div class="profile__info">
 																	<div class="profile__name">
@@ -1302,7 +1304,7 @@
 														<div class="profile profile-size--s">
 															<div class="profile__body">
 																<div class="profile__icon">
-																	<img src="img/profile-avatars/logo.png" alt="image">
+																	<picture><source srcset="img/profile-avatars/logo.webp" type="image/webp"><img src="img/profile-avatars/logo.png" alt="image"></picture>
 																</div>
 																<div class="profile__info">
 																	<div class="profile__name">
@@ -1342,7 +1344,7 @@
 														<div class="profile profile-size--s">
 															<div class="profile__body">
 																<div class="profile__icon">
-																	<img src="img/profile-avatars/logo.png" alt="image">
+																	<picture><source srcset="img/profile-avatars/logo.webp" type="image/webp"><img src="img/profile-avatars/logo.png" alt="image"></picture>
 																</div>
 																<div class="profile__info">
 																	<div class="profile__name">
@@ -1382,7 +1384,7 @@
 														<div class="profile profile-size--s">
 															<div class="profile__body">
 																<div class="profile__icon">
-																	<img src="img/profile-avatars/logo.png" alt="image">
+																	<picture><source srcset="img/profile-avatars/logo.webp" type="image/webp"><img src="img/profile-avatars/logo.png" alt="image"></picture>
 																</div>
 																<div class="profile__info">
 																	<div class="profile__name">
@@ -1422,7 +1424,7 @@
 														<div class="profile profile-size--s">
 															<div class="profile__body">
 																<div class="profile__icon">
-																	<img src="img/profile-avatars/logo.png" alt="image">
+																	<picture><source srcset="img/profile-avatars/logo.webp" type="image/webp"><img src="img/profile-avatars/logo.png" alt="image"></picture>
 																</div>
 																<div class="profile__info">
 																	<div class="profile__name">
@@ -1466,7 +1468,7 @@
 			</div>
 		</div>
 
-		<div id="popupCreatorsProfileDisabled" aria-hidden="true" class="popup popup-creators-profile popup-xl">
+		<div id="popupCreatorsProfileDisabled" aria-hidden="true" class="popup popup-creators-profile popup-xxl">
 			<div class="popup__wrapper">
 				<div class="popup__content">
 					<div class="popup__header mb-5 flex items-center gap-5 sm:pr-6 lg:flex-nowrap flex-wrap justify-between">
@@ -1474,14 +1476,14 @@
 							<div class="profile profile-size--l">
 								<div class="profile__body">
 									<div class="profile__icon">
-										<img src="img/profile-avatars/image.png" alt="image">
+										<picture><source srcset="img/profile-avatars/image.webp" type="image/webp"><img src="img/profile-avatars/image.png" alt="image"></picture>
 									</div>
 									<div class="profile__info">
 										<div class="profile__name">
 											Thetremba
 											<div class="level-badge">
 												<div class="svg-icon">
-													<img class="icon icon--size-m" src="img/levels-badge/Level=1-1x.png" srcset="img/levels-badge/Level=1-2x.png 2x" alt="Level">
+													<picture><source srcset="img/levels-badge/Level=1-1x.webp, img/levels-badge/Level=1-2x.webp 2x" type="image/webp"><img class="icon icon--size-m" src="img/levels-badge/Level=1-1x.png" srcset="img/levels-badge/Level=1-2x.png 2x" alt="Level"></picture>
 												</div>
 											</div>
 										</div>
@@ -1568,7 +1570,7 @@
 
 											</div>
 											<div class="property__desc">
-												<img src="img/flags/flag.png" class="flag" alt="01">
+												<picture><source srcset="img/flags/flag.webp" type="image/webp"><img src="img/flags/flag.png" class="flag" alt="01"></picture>
 												English
 											</div>
 										</div>
@@ -1580,7 +1582,7 @@
 
 											</div>
 											<div class="property__desc">
-												<img src="img/flags/flag.png" class="flag" alt="01">
+												<picture><source srcset="img/flags/flag.webp" type="image/webp"><img src="img/flags/flag.png" class="flag" alt="01"></picture>
 												USA
 											</div>
 										</div>
@@ -1874,7 +1876,7 @@
 														<div class="profile profile-size--s">
 															<div class="profile__body">
 																<div class="profile__icon">
-																	<img src="img/profile-avatars/logo.png" alt="image">
+																	<picture><source srcset="img/profile-avatars/logo.webp" type="image/webp"><img src="img/profile-avatars/logo.png" alt="image"></picture>
 																</div>
 																<div class="profile__info">
 																	<div class="profile__name">
@@ -1914,7 +1916,7 @@
 														<div class="profile profile-size--s">
 															<div class="profile__body">
 																<div class="profile__icon">
-																	<img src="img/profile-avatars/logo.png" alt="image">
+																	<picture><source srcset="img/profile-avatars/logo.webp" type="image/webp"><img src="img/profile-avatars/logo.png" alt="image"></picture>
 																</div>
 																<div class="profile__info">
 																	<div class="profile__name">
@@ -1954,7 +1956,7 @@
 														<div class="profile profile-size--s">
 															<div class="profile__body">
 																<div class="profile__icon">
-																	<img src="img/profile-avatars/logo.png" alt="image">
+																	<picture><source srcset="img/profile-avatars/logo.webp" type="image/webp"><img src="img/profile-avatars/logo.png" alt="image"></picture>
 																</div>
 																<div class="profile__info">
 																	<div class="profile__name">
@@ -1994,7 +1996,7 @@
 														<div class="profile profile-size--s">
 															<div class="profile__body">
 																<div class="profile__icon">
-																	<img src="img/profile-avatars/logo.png" alt="image">
+																	<picture><source srcset="img/profile-avatars/logo.webp" type="image/webp"><img src="img/profile-avatars/logo.png" alt="image"></picture>
 																</div>
 																<div class="profile__info">
 																	<div class="profile__name">
@@ -2034,7 +2036,7 @@
 														<div class="profile profile-size--s">
 															<div class="profile__body">
 																<div class="profile__icon">
-																	<img src="img/profile-avatars/logo.png" alt="image">
+																	<picture><source srcset="img/profile-avatars/logo.webp" type="image/webp"><img src="img/profile-avatars/logo.png" alt="image"></picture>
 																</div>
 																<div class="profile__info">
 																	<div class="profile__name">
@@ -2074,7 +2076,7 @@
 														<div class="profile profile-size--s">
 															<div class="profile__body">
 																<div class="profile__icon">
-																	<img src="img/profile-avatars/logo.png" alt="image">
+																	<picture><source srcset="img/profile-avatars/logo.webp" type="image/webp"><img src="img/profile-avatars/logo.png" alt="image"></picture>
 																</div>
 																<div class="profile__info">
 																	<div class="profile__name">
@@ -2117,6 +2119,240 @@
 				</div>
 			</div>
 		</div>
+
+
+		<div id="popupOffer" aria-hidden="true" class="popup popup-offer popup-xl">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__header mb-5 flex items-center gap-4 pr-4 flex-wrap ">
+						<div class="popup__header-brand-and-platform flex items-center gap-2">
+							<div class="brand-block block-container-bg">
+								<div class="flex items-center gap-2">
+									<div class="icon icon--size-m">
+										<picture><source srcset="img/brands/netflix.webp" type="image/webp"><img src="img/brands/netflix.png" alt="image"></picture>
+									</div>
+									<div>
+										<p class="text-body-md-medium !leading-none">
+											Netflix
+										</p>
+										<span class="text-secondary text-body-xs-medium">
+											Brand
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="platform-block block-container-bg">
+								<div class="flex items-center gap-2">
+									<div class="platform platform--size-l">
+										<img src="img/icons/formkit_youtube.svg" alt="image">
+									</div>
+									<div>
+										<p class="text-body-md-medium !leading-none">
+											Youtube
+										</p>
+										<span class="text-secondary text-body-xs-medium">
+											Platform
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h3 class="sm:heading-xl heading-lg">
+							Promote our new movie
+						</h3>
+					</div>
+					<button data-close type="button" class="popup__close">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<g id="close">
+								<path id="Vector" d="M7 7L17 17M7 17L17 7" stroke="white" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+							</g>
+						</svg>
+					</button>
+					<div class="popup__body sm:mx-0 -mx-2">
+						<div class="popup__inner" data-simplebar>
+							<form action="#" class="popup-offer-form" method="POST">
+								<div class="popup__row grid md:grid-cols-2 gap-6  background-secondary sm:p-6 p-4 sm:rounded-3xl rounded-2xl">
+									<div class="popup__line min-h-[26.25rem] background-tertirary sm:rounded-3xl rounded-2xl">
+										<div class="popup-deliverables popup-deliverables-project checklist-project">
+
+
+											<div class="popup-deliverables-project__header p-4">
+												<h5 class="sm:heading-lg heading-md mb-3 flex gap-2">
+													Checklist
+												</h5>
+												<p>
+													Choose deliverables you can provide
+												</p>
+											</div>
+											<div class="popup-deliverables-project__body p-4">
+												<div data-spollers class="deliverables-project">
+													<details class="deliverables-project__item item-required">
+														<summary class="deliverables-project__title" data-ripple>
+															<div class="checkbox">
+																<input id="c_1" class="checkbox__input no-ripple" checked data-required type="checkbox" value="1" name="form[]">
+																<label for="c_1" class="checkbox__label no-ripple">
+																	<div class="deliverables-project__title-wrap">
+																		<div>
+																			<p>
+																				1 Video (10 min or more)
+																			</p>
+																			<span>
+																				Required
+																			</span>
+																		</div>
+																	</div>
+																</label>
+															</div>
+
+														</summary>
+														<div class="deliverables-project__body spollers__body">
+															<div class="line">
+																<h6 class="line-title heading-sm">
+																	Description
+																</h6>
+																<p>
+																	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum dui nec odio ullamcorper mattis. Nullam pellentesque orci nunc, a ornare dolor sagittis in. Maecenas fermentum eleifend erat, nec egestas neque rutrum euismod.
+																</p>
+															</div>
+															<div class="line">
+																<h6 class="line-title heading-sm">
+																	Files
+																</h6>
+																<p>
+																	You can upload up to 3 files
+																</p>
+															</div>
+
+														</div>
+													</details>
+													<details class="deliverables-project__item">
+														<summary class="deliverables-project__title" data-ripple>
+															<div class="checkbox">
+																<input id="c_2" class="checkbox__input no-ripple" type="checkbox" value="1" name="form[]">
+																<label for="c_2" class="checkbox__label no-ripple">
+																	<div class="deliverables-project__title-wrap">
+																		<div>
+																			<p>
+																				1 Video (10 min or more)
+																			</p>
+																		</div>
+																	</div>
+																</label>
+															</div>
+
+														</summary>
+														<div class="deliverables-project__body spollers__body">
+															<div class="line">
+
+																<h6 class="line-title heading-sm">
+																	Lorem.
+																</h6>
+																<p>
+																	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum dui nec odio ullamcorper mattis. Nullam pellentesque orci nunc, a ornare dolor sagittis in. Maecenas fermentum eleifend erat, nec egestas neque rutrum euismod. Nam pulvinar felis metus, vitae hendrerit turpis efficitur non. Donec pretium quam quis arcu pharetra rhoncus. Etiam sem lorem, finibus eu sapien id, rutrum pharetra orci. Curabitur euismod quam eget nisl dapibus, id tristique velit mollis. Integer ac velit mi.
+																</p>
+															</div>
+
+
+														</div>
+													</details>
+												</div>
+											</div>
+											<div class="popup-deliverables-project__footer p-4">
+												<div class="checklist-required text-violet-300">
+													<p class="text-body-md-medium">
+														Required
+													</p>
+													<span>
+
+													</span>
+												</div>
+												<div class="checklist-selected text-accent-300">
+													<p class="text-body-md-medium">
+														Selected
+													</p>
+													<span></span>
+												</div>
+											</div>
+
+										</div>
+									</div>
+									<div class="popup__line min-h-[26.25rem] background-tertirary sm:rounded-3xl rounded-2xl">
+										<div class="popup-offer p-4">
+											<div class="popup-offer__row">
+												<div class="popup-offer__line form__line">
+													<label for="#currency" class="form__label">Offer sum</label>
+													<div class="input-currency">
+
+														<input autocomplete="off" type="text" name="currency" id="currency" data-required placeholder="0" value="0" class="input input-currency only-num">
+														<span class="currency">
+															USD
+														</span>
+													</div>
+													<small class="text-secondary text-body-sm-regular mt-2 block">
+														-10% (Tier 5 Fee) = $0
+													</small>
+												</div>
+												<div class="popup-offer__line form__line">
+													<label for="#dateInput" class="form__label">Delivery date</label>
+													<div class="input-date input-line">
+
+														<input autocomplete="off" type="text" name="dateInput" id="dateInput" data-required placeholder="Choose date and time" class="input date-input">
+														<span class="svg-icon icon-date">
+															<svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="17" viewBox="0 0 16 17" fill="none">
+																<path d="M4.62634 1.83337C4.90367 1.83337 5.12834 2.04937 5.12834 2.31604V3.28937C5.57367 3.28137 6.07301 3.28137 6.63501 3.28137H9.31168C9.87301 3.28137 10.3723 3.28137 10.8177 3.29004V2.31671C10.8177 2.05004 11.0423 1.83337 11.3197 1.83337C11.597 1.83337 11.8217 2.04937 11.8217 2.31604V3.33337C12.785 3.40737 13.4177 3.58937 13.8817 4.03671C14.347 4.48337 14.5363 5.09137 14.613 6.01804L14.6663 6.50004H1.33301V6.01737C1.41034 5.09071 1.59967 4.48271 2.06434 4.03604C2.52901 3.58937 3.16101 3.40671 4.12434 3.33271V2.31604C4.12434 2.04937 4.34901 1.83337 4.62634 1.83337Z" fill="white" />
+																<path opacity="0.5" d="M14.6665 9.83333V8.5C14.6665 7.94067 14.6639 6.94333 14.6552 6.5H1.33987C1.33121 6.94333 1.33321 7.94067 1.33321 8.5V9.83333C1.33321 12.3473 1.33321 13.6047 2.11454 14.3853C2.89521 15.1667 4.15187 15.1667 6.66654 15.1667H9.33321C11.8465 15.1667 13.1039 15.1667 13.8852 14.3853C14.6665 13.6047 14.6665 12.3473 14.6665 9.83333Z" fill="white" />
+																<path d="M12 11.8333C12 12.0101 11.9298 12.1797 11.8047 12.3047C11.6797 12.4298 11.5101 12.5 11.3333 12.5C11.1565 12.5 10.987 12.4298 10.8619 12.3047C10.7369 12.1797 10.6667 12.0101 10.6667 11.8333C10.6667 11.6565 10.7369 11.487 10.8619 11.3619C10.987 11.2369 11.1565 11.1667 11.3333 11.1667C11.5101 11.1667 11.6797 11.2369 11.8047 11.3619C11.9298 11.487 12 11.6565 12 11.8333ZM12 9.16667C12 9.34348 11.9298 9.51305 11.8047 9.63807C11.6797 9.7631 11.5101 9.83333 11.3333 9.83333C11.1565 9.83333 10.987 9.7631 10.8619 9.63807C10.7369 9.51305 10.6667 9.34348 10.6667 9.16667C10.6667 8.98986 10.7369 8.82029 10.8619 8.69526C10.987 8.57024 11.1565 8.5 11.3333 8.5C11.5101 8.5 11.6797 8.57024 11.8047 8.69526C11.9298 8.82029 12 8.98986 12 9.16667ZM8.66667 11.8333C8.66667 12.0101 8.59643 12.1797 8.4714 12.3047C8.34638 12.4298 8.17681 12.5 8 12.5C7.82319 12.5 7.65362 12.4298 7.5286 12.3047C7.40357 12.1797 7.33333 12.0101 7.33333 11.8333C7.33333 11.6565 7.40357 11.487 7.5286 11.3619C7.65362 11.2369 7.82319 11.1667 8 11.1667C8.17681 11.1667 8.34638 11.2369 8.4714 11.3619C8.59643 11.487 8.66667 11.6565 8.66667 11.8333ZM8.66667 9.16667C8.66667 9.34348 8.59643 9.51305 8.4714 9.63807C8.34638 9.7631 8.17681 9.83333 8 9.83333C7.82319 9.83333 7.65362 9.7631 7.5286 9.63807C7.40357 9.51305 7.33333 9.34348 7.33333 9.16667C7.33333 8.98986 7.40357 8.82029 7.5286 8.69526C7.65362 8.57024 7.82319 8.5 8 8.5C8.17681 8.5 8.34638 8.57024 8.4714 8.69526C8.59643 8.82029 8.66667 8.98986 8.66667 9.16667ZM5.33333 11.8333C5.33333 12.0101 5.2631 12.1797 5.13807 12.3047C5.01305 12.4298 4.84348 12.5 4.66667 12.5C4.48986 12.5 4.32029 12.4298 4.19526 12.3047C4.07024 12.1797 4 12.0101 4 11.8333C4 11.6565 4.07024 11.487 4.19526 11.3619C4.32029 11.2369 4.48986 11.1667 4.66667 11.1667C4.84348 11.1667 5.01305 11.2369 5.13807 11.3619C5.2631 11.487 5.33333 11.6565 5.33333 11.8333ZM5.33333 9.16667C5.33333 9.34348 5.2631 9.51305 5.13807 9.63807C5.01305 9.7631 4.84348 9.83333 4.66667 9.83333C4.48986 9.83333 4.32029 9.7631 4.19526 9.63807C4.07024 9.51305 4 9.34348 4 9.16667C4 8.98986 4.07024 8.82029 4.19526 8.69526C4.32029 8.57024 4.48986 8.5 4.66667 8.5C4.84348 8.5 5.01305 8.57024 5.13807 8.69526C5.2631 8.82029 5.33333 8.98986 5.33333 9.16667Z" fill="white" />
+															</svg>
+														</span>
+														<a href="#" class="button-reset">
+															<div class="svg-icon">
+																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+																	<mask id="mask0_1102_17442" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="25">
+																		<g clip-path="url(#clip0_1102_17442)">
+																			<path d="M7 7.5L17 17.5M7 17.5L17 7.5" stroke="white" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+																		</g>
+																	</mask>
+																	<g mask="url(#mask0_1102_17442)">
+																		<rect y="0.5" width="24" height="24" fill="#9A9CAC" />
+																	</g>
+																	<defs>
+																		<clipPath id="clip0_1102_17442">
+																			<rect width="24" height="24" fill="white" transform="translate(0 0.5)" />
+																		</clipPath>
+																	</defs>
+																</svg>
+															</div>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="popup-offer__footer">
+												<div class="popup-offer__total">
+													<p>
+														Total received
+													</p>
+													<span>
+														$0
+													</span>
+												</div>
+												<button type="submit" class="button button-large button-primary w-full" disabled data-ripple="">
+													<span class="button__text">
+														Send offer
+													</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
 		<footer class="footer">
 			<div class="footer__container">
 				<div class="footer__content">
@@ -2144,8 +2380,9 @@
 			</div>
 		</footer>
 	</div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js?_v=20231128173115"></script>
-	<script src="js/app.min.js?_v=20231128173115"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20231129141405"></script>
+	<script src="https://cdn.jsdelivr.net/npm/flatpickr?_v=20231129141405"></script>
+	<script src="js/app.min.js?_v=20231129141405"></script>
 </body>
 
 </html>

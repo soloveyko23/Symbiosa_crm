@@ -10,11 +10,13 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20231128173115">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231129141405">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://cdn.tailwindcss.com?_v=20231128173115"></script>
+	<script src="https://cdn.tailwindcss.com?_v=20231129141405"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css?_v=20231129141405">
+	<link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/dark.css?_v=20231129141405">
 </head>
 
 <body>
@@ -142,19 +144,19 @@
 		<main class="page">
 			<div class="page__container">
 				<div class="widgets">
-					<div class="widget brand__info">
-						<div class="widget__header brand__info-header header-brand">
+					<div class="widget brand__info !p-0">
+						<div class="widget__header brand__info-header header-brand p-6">
 							<div class="profile profile-level-3 profile-size--m header-brand__profile">
 								<div class="profile__body">
 									<div class="profile__icon">
-										<img src="img/profile-avatars/image.png" alt="image">
+										<picture><source srcset="img/profile-avatars/image.webp" type="image/webp"><img src="img/profile-avatars/image.png" alt="image"></picture>
 									</div>
 									<div class="profile__info">
 										<div class="profile__name">
 											Jacob Maddison
 											<div class="level-badge">
 												<div class="svg-icon">
-													<img class="icon icon--size-m" src="img/levels-badge/Level=5-1x.png" srcset="img/levels-badge/Level=1-2x.png 2x" alt="Level">
+													<picture><source srcset="img/levels-badge/Level=5-1x.webp, img/levels-badge/Level=1-2x.webp 2x" type="image/webp"><img class="icon icon--size-m" src="img/levels-badge/Level=5-1x.png" srcset="img/levels-badge/Level=1-2x.png 2x" alt="Level"></picture>
 												</div>
 											</div>
 										</div>
@@ -165,66 +167,303 @@
 								</div>
 
 							</div>
-							<div class="level-bar">
-								<div class="progress-container">
-									<div class="progress" id="progress"></div>
-									<div class="progress-step actived">
-										<div class="circle">1</div>
+							<div class="levelbar-block flex-1">
+								<div class="md:heading-lg heading-md mb-4 inline-flex items-center gap-2">Level 3 <div class="svg-icon">
+										<picture><source srcset="img/levels-badge/Level=3-1x.webp, img/levels-badge/Level=3-2x.webp 2x" type="image/webp"><img class="icon icon--size-l -mt-1" src="img/levels-badge/Level=3-1x.png" srcset="img/levels-badge/Level=3-2x.png 2x" alt="Level"></picture>
 									</div>
-									<div class="progress-step">
-										<div class="circle">
-											<img src="img/icons/solar_lock-keyhole-minimalistic-bold-duotone.svg" alt="1">
+								</div>
+								<div class="level-bar ">
+
+									<div class="progress-container">
+										<div class="progress" id="progress" style="width: 25%;"></div>
+										<div class="progress-step actived" data-template="levelOne">
+											<div class="circle">1</div>
+											<div class="!hidden">
+												<div id="levelOne" class="progress-step__tooltip tooltip">
+													<div class="tooltip-header">
+														<div class="tooltip-level text-black md:heading-sm heading-xs">
+															Level 1
+															<div class="svg-icon">
+																<picture><source srcset="img/levels-badge/Level=1-1x.webp, img/levels-badge/Level=1-2x.webp 2x" type="image/webp"><img class="icon icon--size-m" src="img/levels-badge/Level=1-1x.png" srcset="img/levels-badge/Level=1-2x.png 2x" alt="Level"></picture>
+															</div>
+														</div>
+														<div class="tooltip-done">
+															<div class="svg-icon">
+																<svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="16" viewBox="0 0 16 16" fill="none">
+																	<path d="M8.00065 14.6667C4.85798 14.6667 3.28665 14.6667 2.30998 13.69C1.33398 12.7147 1.33398 11.1427 1.33398 8.00001C1.33398 4.85734 1.33398 3.28601 2.30998 2.30934C3.28732 1.33334 4.85798 1.33334 8.00065 1.33334C11.1433 1.33334 12.7147 1.33334 13.6906 2.30934C14.6673 3.28668 14.6673 4.85734 14.6673 8.00001C14.6673 11.1427 14.6673 12.714 13.6906 13.69C12.7153 14.6667 11.1433 14.6667 8.00065 14.6667Z" fill="#03986A" />
+																	<path d="M11.794 5.20251C11.9259 5.33234 12 5.50834 12 5.69184C12 5.87534 11.9259 6.05133 11.794 6.18117L7.09809 10.7975C6.96602 10.9272 6.78698 11 6.60032 11C6.41366 11 6.23463 10.9272 6.10256 10.7975L4.22419 8.95096C4.15498 8.88757 4.09948 8.81112 4.06098 8.72618C4.02248 8.64124 4.00178 8.54955 4.00011 8.45657C3.99844 8.3636 4.01584 8.27125 4.05127 8.18502C4.08669 8.0988 4.13942 8.02048 4.20631 7.95473C4.2732 7.88897 4.35287 7.83713 4.44058 7.80231C4.52829 7.76748 4.62223 7.75038 4.71681 7.75202C4.81139 7.75366 4.90466 7.77401 4.99107 7.81186C5.07747 7.8497 5.15524 7.90427 5.21972 7.9723L6.60032 9.3295L10.7985 5.20251C10.9305 5.07284 11.1096 5 11.2962 5C11.4829 5 11.6619 5.07284 11.794 5.20251Z" fill="white" />
+																</svg>
+															</div>
+														</div>
+													</div>
+
+													<div class="tooltip-body">
+														<p>
+															15% Fee
+														</p>
+													</div>
+												</div>
+											</div>
+
 										</div>
-									</div>
-									<div class="progress-step">
-										<div class="circle">
-											<img src="img/icons/solar_lock-keyhole-minimalistic-bold-duotone.svg" alt="1">
+										<div class="progress-step actived" data-template="levelTwo">
+											<div class="circle">2</div>
+											<div class="!hidden">
+												<div id="levelTwo" class="progress-step__tooltip tooltip">
+													<div class="tooltip-header">
+														<div class="tooltip-level text-black md:heading-sm heading-xs">
+															Level 2
+															<div class="svg-icon">
+																<picture><source srcset="img/levels-badge/Level=2-1x.webp, img/levels-badge/Level=2-2x.webp 2x" type="image/webp"><img class="icon icon--size-m" src="img/levels-badge/Level=2-1x.png" srcset="img/levels-badge/Level=2-2x.png 2x" alt="Level"></picture>
+															</div>
+														</div>
+														<div class="tooltip-done">
+															<div class="svg-icon">
+																<svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="16" viewBox="0 0 16 16" fill="none">
+																	<path d="M8.00065 14.6667C4.85798 14.6667 3.28665 14.6667 2.30998 13.69C1.33398 12.7147 1.33398 11.1427 1.33398 8.00001C1.33398 4.85734 1.33398 3.28601 2.30998 2.30934C3.28732 1.33334 4.85798 1.33334 8.00065 1.33334C11.1433 1.33334 12.7147 1.33334 13.6906 2.30934C14.6673 3.28668 14.6673 4.85734 14.6673 8.00001C14.6673 11.1427 14.6673 12.714 13.6906 13.69C12.7153 14.6667 11.1433 14.6667 8.00065 14.6667Z" fill="#03986A" />
+																	<path d="M11.794 5.20251C11.9259 5.33234 12 5.50834 12 5.69184C12 5.87534 11.9259 6.05133 11.794 6.18117L7.09809 10.7975C6.96602 10.9272 6.78698 11 6.60032 11C6.41366 11 6.23463 10.9272 6.10256 10.7975L4.22419 8.95096C4.15498 8.88757 4.09948 8.81112 4.06098 8.72618C4.02248 8.64124 4.00178 8.54955 4.00011 8.45657C3.99844 8.3636 4.01584 8.27125 4.05127 8.18502C4.08669 8.0988 4.13942 8.02048 4.20631 7.95473C4.2732 7.88897 4.35287 7.83713 4.44058 7.80231C4.52829 7.76748 4.62223 7.75038 4.71681 7.75202C4.81139 7.75366 4.90466 7.77401 4.99107 7.81186C5.07747 7.8497 5.15524 7.90427 5.21972 7.9723L6.60032 9.3295L10.7985 5.20251C10.9305 5.07284 11.1096 5 11.2962 5C11.4829 5 11.6619 5.07284 11.794 5.20251Z" fill="white" />
+																</svg>
+															</div>
+														</div>
+													</div>
+
+													<div class="tooltip-body">
+														<p>
+															$10,000 Spent
+														</p>
+														<p>
+															Reward: 14.5% Fee
+														</p>
+													</div>
+												</div>
+											</div>
 										</div>
-									</div>
-									<div class="progress-step">
-										<div class="circle">
-											<img src="img/icons/solar_lock-keyhole-minimalistic-bold-duotone.svg" alt="1">
+										<div class="progress-step actived current" data-template="levelThree">
+											<div class="circle">3</div>
+											<div class="!hidden">
+												<div id="levelThree" class="progress-step__tooltip tooltip">
+													<div class="tooltip-header">
+														<div class="tooltip-level text-black md:heading-sm heading-xs">
+															Level 3
+															<div class="svg-icon">
+																<picture><source srcset="img/levels-badge/Level=3-1x.webp, img/levels-badge/Level=3-2x.webp 2x" type="image/webp"><img class="icon icon--size-m" src="img/levels-badge/Level=3-1x.png" srcset="img/levels-badge/Level=3-2x.png 2x" alt="Level"></picture>
+															</div>
+														</div>
+														<div class="tooltip-done">
+															<div class="svg-icon">
+																<svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="16" viewBox="0 0 16 16" fill="none">
+																	<path d="M8.00065 14.6667C4.85798 14.6667 3.28665 14.6667 2.30998 13.69C1.33398 12.7147 1.33398 11.1427 1.33398 8.00001C1.33398 4.85734 1.33398 3.28601 2.30998 2.30934C3.28732 1.33334 4.85798 1.33334 8.00065 1.33334C11.1433 1.33334 12.7147 1.33334 13.6906 2.30934C14.6673 3.28668 14.6673 4.85734 14.6673 8.00001C14.6673 11.1427 14.6673 12.714 13.6906 13.69C12.7153 14.6667 11.1433 14.6667 8.00065 14.6667Z" fill="#03986A" />
+																	<path d="M11.794 5.20251C11.9259 5.33234 12 5.50834 12 5.69184C12 5.87534 11.9259 6.05133 11.794 6.18117L7.09809 10.7975C6.96602 10.9272 6.78698 11 6.60032 11C6.41366 11 6.23463 10.9272 6.10256 10.7975L4.22419 8.95096C4.15498 8.88757 4.09948 8.81112 4.06098 8.72618C4.02248 8.64124 4.00178 8.54955 4.00011 8.45657C3.99844 8.3636 4.01584 8.27125 4.05127 8.18502C4.08669 8.0988 4.13942 8.02048 4.20631 7.95473C4.2732 7.88897 4.35287 7.83713 4.44058 7.80231C4.52829 7.76748 4.62223 7.75038 4.71681 7.75202C4.81139 7.75366 4.90466 7.77401 4.99107 7.81186C5.07747 7.8497 5.15524 7.90427 5.21972 7.9723L6.60032 9.3295L10.7985 5.20251C10.9305 5.07284 11.1096 5 11.2962 5C11.4829 5 11.6619 5.07284 11.794 5.20251Z" fill="white" />
+																</svg>
+															</div>
+														</div>
+													</div>
+
+													<div class="tooltip-body">
+														<p>
+															$25,000 Spent
+														</p>
+														<p>
+															Reward: 14% Fee
+														</p>
+													</div>
+												</div>
+											</div>
 										</div>
-									</div>
-									<div class="progress-step">
-										<div class="circle">
-											<img src="img/icons/solar_lock-keyhole-minimalistic-bold-duotone.svg" alt="1">
+										<div class="progress-step" data-template="levelFour">
+											<div class="circle">4</div>
+											<div class="!hidden">
+												<div id="levelFour" class="progress-step__tooltip tooltip">
+													<div class="tooltip-header">
+														<div class="tooltip-level text-black md:heading-sm heading-xs">
+															Level 4
+															<div class="svg-icon">
+																<picture><source srcset="img/levels-badge/Level=4-1x.webp, img/levels-badge/Level=4-2x.webp 2x" type="image/webp"><img class="icon icon--size-m" src="img/levels-badge/Level=4-1x.png" srcset="img/levels-badge/Level=4-2x.png 2x" alt="Level"></picture>
+															</div>
+														</div>
+													</div>
+
+													<div class="tooltip-body">
+														<p>
+															$25,000 Spent
+														</p>
+														<p>
+															Reward: 14% Fee
+														</p>
+														<span>
+															$10,000 left
+														</span>
+													</div>
+												</div>
+											</div>
 										</div>
-									</div>
-									<div class="progress-step">
-										<div class="circle">
-											<img src="img/icons/solar_lock-keyhole-minimalistic-bold-duotone.svg" alt="1">
+										<div class="progress-step" data-template="levelFive">
+											<div class="circle">5</div>
+											<div class="!hidden">
+												<div id="levelFive" class="progress-step__tooltip tooltip">
+													<div class="tooltip-header">
+														<div class="tooltip-level text-black md:heading-sm heading-xs">
+															Level 5
+															<div class="svg-icon">
+																<picture><source srcset="img/levels-badge/Level=5-1x.webp, img/levels-badge/Level=5-2x.webp 2x" type="image/webp"><img class="icon icon--size-m" src="img/levels-badge/Level=5-1x.png" srcset="img/levels-badge/Level=5-2x.png 2x" alt="Level"></picture>
+															</div>
+														</div>
+													</div>
+
+													<div class="tooltip-body">
+														<p>
+															$25,000 Spent
+														</p>
+														<p>
+															Reward: 14% Fee
+														</p>
+														<span>
+															$10,000 left
+														</span>
+													</div>
+												</div>
+											</div>
 										</div>
-									</div>
-									<div class="progress-step">
-										<div class="circle">
-											<img src="img/icons/solar_lock-keyhole-minimalistic-bold-duotone.svg" alt="1">
+										<div class="progress-step" data-template="levelSix">
+											<div class="circle">6</div>
+											<div class="!hidden">
+												<div id="levelSix" class="progress-step__tooltip tooltip">
+													<div class="tooltip-header">
+														<div class="tooltip-level text-black md:heading-sm heading-xs">
+															Level 6
+															<div class="svg-icon">
+																<picture><source srcset="img/levels-badge/Level=6-1x.webp, img/levels-badge/Level=6-2x.webp 2x" type="image/webp"><img class="icon icon--size-m" src="img/levels-badge/Level=6-1x.png" srcset="img/levels-badge/Level=6-2x.png 2x" alt="Level"></picture>
+															</div>
+														</div>
+													</div>
+
+													<div class="tooltip-body">
+														<p>
+															$25,000 Spent
+														</p>
+														<p>
+															Reward: 14% Fee
+														</p>
+														<span>
+															$10,000 left
+														</span>
+													</div>
+												</div>
+											</div>
 										</div>
-									</div>
-									<div class="progress-step">
-										<div class="circle">
-											<img src="img/icons/solar_lock-keyhole-minimalistic-bold-duotone.svg" alt="1">
+										<div class="progress-step" data-template="levelSeven">
+											<div class="circle">7</div>
+											<div class="!hidden">
+												<div id="levelSeven" class="progress-step__tooltip tooltip">
+													<div class="tooltip-header">
+														<div class="tooltip-level text-black md:heading-sm heading-xs">
+															Level 7
+															<div class="svg-icon">
+																<picture><source srcset="img/levels-badge/Level=7-1x.webp, img/levels-badge/Level=7-2x.webp 2x" type="image/webp"><img class="icon icon--size-m" src="img/levels-badge/Level=7-1x.png" srcset="img/levels-badge/Level=7-2x.png 2x" alt="Level"></picture>
+															</div>
+														</div>
+													</div>
+
+													<div class="tooltip-body">
+														<p>
+															$25,000 Spent
+														</p>
+														<p>
+															Reward: 14% Fee
+														</p>
+														<span>
+															$10,000 left
+														</span>
+													</div>
+												</div>
+											</div>
 										</div>
-									</div>
-									<div class="progress-step">
-										<div class="circle">
-											<img src="img/icons/solar_lock-keyhole-minimalistic-bold-duotone.svg" alt="1">
+										<div class="progress-step" data-template="levelEight">
+											<div class="circle">8</div>
+											<div class="!hidden">
+												<div id="levelEight" class="progress-step__tooltip tooltip">
+													<div class="tooltip-header">
+														<div class="tooltip-level text-black md:heading-sm heading-xs">
+															Level 8
+															<div class="svg-icon">
+																<picture><source srcset="img/levels-badge/Level=8-1x.webp, img/levels-badge/Level=8-2x.webp 2x" type="image/webp"><img class="icon icon--size-m" src="img/levels-badge/Level=8-1x.png" srcset="img/levels-badge/Level=8-2x.png 2x" alt="Level"></picture>
+															</div>
+														</div>
+													</div>
+
+													<div class="tooltip-body">
+														<p>
+															$25,000 Spent
+														</p>
+														<p>
+															Reward: 14% Fee
+														</p>
+														<span>
+															$10,000 left
+														</span>
+													</div>
+												</div>
+											</div>
 										</div>
-									</div>
-									<div class="progress-step">
-										<div class="circle">
-											<img src="img/icons/solar_lock-keyhole-minimalistic-bold-duotone.svg" alt="1">
+										<div class="progress-step" data-template="levelNine">
+											<div class="circle">9</div>
+											<div class="!hidden">
+												<div id="levelNine" class="progress-step__tooltip tooltip">
+													<div class="tooltip-header">
+														<div class="tooltip-level text-black md:heading-sm heading-xs">
+															Level 9
+															<div class="svg-icon">
+																<picture><source srcset="img/levels-badge/Level=9-1x.webp, img/levels-badge/Level=9-2x.webp 2x" type="image/webp"><img class="icon icon--size-m" src="img/levels-badge/Level=9-1x.png" srcset="img/levels-badge/Level=9-2x.png 2x" alt="Level"></picture>
+															</div>
+														</div>
+													</div>
+
+													<div class="tooltip-body">
+														<p>
+															$25,000 Spent
+														</p>
+														<p>
+															Reward: 14% Fee
+														</p>
+														<span>
+															$10,000 left
+														</span>
+													</div>
+												</div>
+											</div>
 										</div>
-									</div>
-									<div class="progress-step">
-										<div class="circle">
-											<img src="img/icons/solar_lock-keyhole-minimalistic-bold-duotone.svg" alt="1">
+										<div class="progress-step" data-template="levelTen">
+											<div class="circle">10</div>
+											<div class="!hidden">
+												<div id="levelTen" class="progress-step__tooltip tooltip">
+													<div class="tooltip-header">
+														<div class="tooltip-level text-black md:heading-sm heading-xs">
+															Level 10
+															<div class="svg-icon">
+																<picture><source srcset="img/levels-badge/Level=10-1x.webp, img/levels-badge/Level=10-2x.webp 2x" type="image/webp"><img class="icon icon--size-m" src="img/levels-badge/Level=10-1x.png" srcset="img/levels-badge/Level=10-2x.png 2x" alt="Level"></picture>
+															</div>
+														</div>
+													</div>
+
+													<div class="tooltip-body">
+														<p>
+															Goal: $2,500,000 Spent
+														</p>
+														<p>
+															Reward: 10% Fee
+														</p>
+														<span>
+															$2,460,000 left
+														</span>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="widget__body brand__info-body">
+						<div class="widget__body brand__info-body p-6">
 							<div class="brand__info-body__row grid lg:grid-cols-2 gap-4">
 								<div class="grid sm:grid-cols-2 gap-4">
 									<div class="brand__info-block info-block brand__info-campaigns">
@@ -452,7 +691,7 @@
 													<div class="profile profile-size--s">
 														<div class="profile__body">
 															<div class="profile__icon">
-																<img src="img/profile-avatars/logo.png" alt="image">
+																<picture><source srcset="img/profile-avatars/logo.webp" type="image/webp"><img src="img/profile-avatars/logo.png" alt="image"></picture>
 															</div>
 															<div class="profile__info">
 																<div class="profile__name">
@@ -494,7 +733,7 @@
 													<div class="profile profile-size--s">
 														<div class="profile__body">
 															<div class="profile__icon">
-																<img src="img/profile-avatars/logo.png" alt="image">
+																<picture><source srcset="img/profile-avatars/logo.webp" type="image/webp"><img src="img/profile-avatars/logo.png" alt="image"></picture>
 															</div>
 															<div class="profile__info">
 																<div class="profile__name">
@@ -536,7 +775,7 @@
 													<div class="profile profile-size--s">
 														<div class="profile__body">
 															<div class="profile__icon">
-																<img src="img/profile-avatars/logo.png" alt="image">
+																<picture><source srcset="img/profile-avatars/logo.webp" type="image/webp"><img src="img/profile-avatars/logo.png" alt="image"></picture>
 															</div>
 															<div class="profile__info">
 																<div class="profile__name">
@@ -578,7 +817,7 @@
 													<div class="profile profile-size--s">
 														<div class="profile__body">
 															<div class="profile__icon">
-																<img src="img/profile-avatars/logo.png" alt="image">
+																<picture><source srcset="img/profile-avatars/logo.webp" type="image/webp"><img src="img/profile-avatars/logo.png" alt="image"></picture>
 															</div>
 															<div class="profile__info">
 																<div class="profile__name">
@@ -722,8 +961,9 @@
 			</div>
 		</footer>
 	</div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js?_v=20231128173115"></script>
-	<script src="js/app.min.js?_v=20231128173115"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20231129141405"></script>
+	<script src="https://cdn.jsdelivr.net/npm/flatpickr?_v=20231129141405"></script>
+	<script src="js/app.min.js?_v=20231129141405"></script>
 </body>
 
 </html>
